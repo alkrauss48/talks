@@ -1,0 +1,163 @@
+gem install rails-api
+rails-api new blog
+
+# Look at File Structure
+
+rails c
+rails s
+curl http://127.0.0.1:3000
+
+rails-api g scaffold user email:string password:string auth_token:string
+rails-api g scaffold post title:string body:text user:references
+rails-api g scaffold comment body:text user:references post:references
+rake db:migrate
+
+# Discuss benefit of scaffolding an API vs scaffolding a whole app
+
+# Add seeds from seeds.rb, rake db:seed, get error
+
+user.rb -> has_many :posts, has_many :comments
+post.rb -> has_many :comments
+
+rake db:seed
+
+# Make sure server is running
+curl http://127.0.0.1:3000/users
+curl http://127.0.0.1:3000/posts
+curl http://127.0.0.1:3000/comments
+curl http://127.0.0.1:3000/user/1
+
+# Show a Post request
+curl -X POST http://127.0.0.1:3000/posts -d "post[title]=test" -d "post[body]=test body" -d "post[user_id]=1"
+curl http://127.0.0.1:3000/posts
+# Show a Delete request
+curl -X DELETE http://127.0.0.1:3000/posts/5
+
+# Look at routes file - see how simple it is
+# Discuss that the resources method gives us 7 controller actions
+# Discuss why :new and :edit are excluded
+
+
+# SERIALIZATION
+
+# Add to Gemfile:
+  gem 'active_model_serializers', '~> 0.8.0'
+
+# Run Commands:
+  rails g serializer user
+  rails g serializer post
+  rails g serializer comment
+
+# Run curl command:
+  curl http://127.0.0.1:3000/comments
+
+# Now Edit comment_serializer.rb
+  attributes :id, :body, :user
+
+# Rerun curl command to show more attributes:
+  curl http://127.0.0.1:3000/comments
+
+# Add has_many to post_serializer:
+  has_many :comments
+
+# Add a something method to post_serializer:
+  attributes :id, :title, :body, :something
+
+  def something
+    "Herrow #{object.title}"
+  end
+
+Discuss now your controller doesn't have to worry about formatting the output
+json - you've now delegated it to a serializer, which is meant to do that.
+
+# AUTHENTICATION
+
+# Update routes.rb:
+get :token, controller: 'application'
+
+# Update application_controller.rb
+
+  def token
+  end
+
+# then:
+
+  authenticate_with_http_basic do |email, password|
+  end
+
+# then:
+
+  include ActionController::HttpAuthentication::Basic::ControllerMethods
+  include ActionController::HttpAuthentication::Token::ControllerMethods
+
+# then:
+
+  user = User.find_by(email: email)
+  if user && user.password == password
+    render json: { token: user.auth_token }
+  else
+    render json: { error: 'Incorrect credentials' }, status: 401
+  end
+
+
+# Start a curl command on the command line:
+
+curl http://127.0.0.1:3000/token -H 'Authorization: Basic
+
+# open up rails console and run:
+
+Base64.encode64("#{User.first.email}:#{User.first.password}")
+
+# Full command:
+curl http://127.0.0.1:3000/token -H 'Authorization: Basic dXNlckBleGFtcGxlLmNvbTpwYXNzd29yZA==\n'
+
+# Should get {token: null}, which is what we want. So, open up user.rb:
+
+  before_create -> { self.auth_token = SecureRandom.hex }
+
+
+#Then:
+rake db:reset
+
+# Rerun curl statement and show token is set:
+
+# Jump back to applciation_controller.rb and set before_filter:
+
+  before_filter :authenticate_user_from_token, except: [:token]
+
+# Then:
+
+  private
+
+  def authenticate_user_from_token
+
+  end
+
+
+# Then
+
+    unless authenticate_with_http_token { |token, options| User.find_by(auth_token: token) }
+      render json: { error: 'Bad Token'}, status: 401
+    end
+
+# Run it, and get an error because module isn't included:
+
+  include ActionController::HttpAuthentication::Token::ControllerMethods
+
+# Then run it and see results
+# Example:
+
+curl http://127.0.0.1:3000/users -H 'Authorization: Token=token
+
+
+# BONUS
+
+# Filtering:
+# Open posts_controller.rb:
+
+  @posts = Post.where(post_params)
+
+# And change post_params to this:
+
+  params.permit(:title, :body, :user_id)
+
