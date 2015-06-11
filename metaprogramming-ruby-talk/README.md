@@ -15,9 +15,9 @@ Enjoy!
 
 ---
 
-## Intentionally Left Out Topic
+## Intentionally Left Out Topics
 
-I do not talk about Singleton Methods or Eigenclasses. Those concepts cover a
+I do not talk about [Singleton Methods or Eigenclasses](http://www.integralist.co.uk/posts/eigenclass.html). Those concepts cover a
 good chunk of metaprogramming in Ruby, but they are in my opinion the most
 confusing concepts to master and I've never ran into a situation where using
 them would have made my code much better. Thus I chose to avoid them altogether,
