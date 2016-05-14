@@ -1,0 +1,130 @@
+-- server.js --
+
+var io = require('socket.io')();
+io.on('connection', function(socket){
+
+});
+io.listen(3000);
+
+
+// Comment all of the above out for now
+
+
+var express = require('express');
+var app     = express();
+var server  = require('http').createServer(app);
+
+app.use(express.static(__dirname + '/public'));
+
+server.listen(3000);
+
+
+-- public/index.html --<html>
+
+
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <title>WebSockets Demo</title>
+
+</head>
+<body>
+  <h1>WebSocket Demo</h1>
+  <div class="messages">
+
+  </div>
+  <form class="submit-message" method="post">
+    <input type="text" name="" id="my-message" value="" />
+    <input type="submit" name="" id="" value="Submit" />
+  </form>
+
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
+
+
+
+-- server.js --<html>
+
+// Uncomment socket.io code
+// Move HTTP server.listen() call to end of file
+// Delete io.listen() call
+// Attach server variable to socket.io instance
+
+var io = require('socket.io')(server);
+.
+.
+server.listen(3000);
+
+
+// Inside of connection callback
+
+socket.on('message', function(data){
+  console.log(data);
+});
+
+
+// Go back to index.html
+
+-- public/index.html --
+
+//add socket.io client library
+
+<script src="/socket.io/socket.io.js" type="text/javascript" charset="utf-8"></script>
+
+
+// Create public/client.js
+
+// Link it in public/index.html
+
+<script src="client.js" type="text/javascript" charset="utf-8"></script>
+
+
+-- public/client.js --
+
+(function() {
+  var socket = io();
+
+  $('.submit-message').submit(function(event){
+    event.preventDefault();
+
+    socket.emit('message', $('#my-message').val());
+  });
+})();
+
+
+// Demo sending messsages and having it appear on the server logs
+
+
+// Add broadcast logic to the server
+-- server.js --
+
+
+    socket.broadcast.emit('message', {
+      message: data
+    });
+
+
+// Add handlers in client.js for receiving data from server
+-- client.js --
+
+// Below the form submit callback
+
+  socket.on('message', function(data){
+    $('.messages').append('<p>' + data.message + '</p>');
+  });
+
+
+
+// Then - after showing it works - add in the jQuery bit to add it on your own machine
+// In the form handler, before it is emitted
+
+
+  $('.messages').append('<p>' + $('#my-message').val() + '</p>');
+
+
+// Then - if you want - reset the input after submitting
+
+
+  $('#my-message').val('');
