@@ -10,9 +10,7 @@ io.on('connection', function(socket){
   socket.on('message', function(data){
     console.log(data);
 
-    socket.broadcast.emit('message', {
-      message: data
-    });
+    socket.broadcast.emit('message', data);
   });
 
 });
