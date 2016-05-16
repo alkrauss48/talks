@@ -1,301 +1,122 @@
-%title: mdp - Sample Presentation
-%author: visit1985
-%date: 2016-02-07
+%title: Skyrocket with WebSockets
+%author: thecodeboss
+%date: 2016-05-17
 
--> mdp <-
+
+
+-> Skyrocket with WebSockets <-
 =========
 
--> A command-line based markdown presentation tool. <-
-
-_Basic controls:_
-
-next slide      *Enter*, *Space*, *Page Down*, *j*, *l*,
-                *Down Arrow*, *Right Arrow*
-
-previous slide  *Backspace*, *Page Up*, *h*, *k*,
-                *Up Arrow*, *Left Arrow*
-
-quit            *q*
-reload          *r*
-slide N         *1..9*
-first slide     *Home*, *g*
-last slide      *End*, *G*
+-> *By Aaron Krauss* <-
 
 -------------------------------------------------
 
--> # Supported markdown formatting <-
 
-The input file is split into multiple slides by
-horizontal rules (hr). A hr consisting of at
-least 3 *\** or *-*. It can also contain spaces but
-no other characters.
 
-Each of these represents the start of a new slide.
+-> # About Me <-
 
-\* \* \*
-\---
-\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
-\- - -
+Site: *thesocietea.org*
+
+Twitter: *@thecodeboss*
+
+GitHub: *github.com/alkrauss48*
 
 -------------------------------------------------
 
--> # Supported markdown formatting <-
-
-First-level headers can be prefixed by single *#*
-or underlined by *===*.
-
-\# first-level
-
-becomes
-
-# first-level
-
--------------------------------------------------
-
--> # Supported markdown formatting <-
-
-Second-level headers can be prefixed by *##* or
-underlined by *---*.
-
-second-level
-\------------
-
-becomes
-
-second-level
-------------
 
 
--------------------------------------------------
+-> # Traditional HTTP <-
 
--> # Supported markdown formatting's <-
+- Client Requests Data
+- Server Responds with Data
 
-Inline codes are surrounded with backticks.
-
-C program starts with \`main()\`.
-
-becomes
-
-C program starts with `main()`.
-
--------------------------------------------------
-
--> # Supported markdown formatting <-
-
-Code blocks are automatically detected by 4 spaces
-at the beginning of a line.
-
-Tabs are automatically expanded to 4 spaces while
-parsing the input.
-
-\    int main(int argc, char \*argv[]) {
-\        printf("%s\\n", "Hello world!");
-\    }
-
-becomes
-
-    int main(int argc, char *argv[]) {
-        printf("%s\n", "Hello world!");
-    }
-
--------------------------------------------------
-
--> # Supported markdown formatting <-
-
-You can also use [pandoc](http://pandoc.org/demo/example9/pandocs-markdown.html)'s fenced code block
-extension. Use at least three ~ chars to open and
-at least as many or more ~ for closing.
-
-\~~~ {.numberLines}
-\int main(int argc, char \*argv[]) {
-\    printf("%s\\n", "Hello world!");
-\}
-\~~~~~~~~~~~~~~~~~~
-
-becomes
-
-~~~ {.numberLines}
-int main(int argc, char \*argv[]) {
-    printf("%s\\n", "Hello world!");
-}
-~~~~~~~~~~~~~~~~~~
-
-Pandoc attributes (like ".numberlines" etc.)
-will be ignored
-
--------------------------------------------------
-
--> # Supported markdown formatting <-
-
-Quotes are auto-detected by preceding *>*.
-
-Multiple *>* are interpreted as nested quotes.
-
-\> quote
-\>> nested quote 1
-\> > nested quote 2
-
-becomes
-
-> quote
->> nested quote 1
-> > nested quote 2
-
--------------------------------------------------
-
--> # Supported markdown formatting <-
-
-Inline highlighting is supported as followed:
-
-\- *\** colors text as red
-\- *\_* underlines text
-
-\_some\_ \*highlighted\* \_\*text\*\_
-
-becomes
-
-_some_ *highlighted* _*text*_
-
--------------------------------------------------
-
--> # Supported markdown formatting <-
-
-Backslashes force special markdown characters
-like *\**, *\_*, *#* and *>* to be printed as
-normal characters.
-
-\\\*special\\\*
-
-becomes
-
-\*special\*
-
--------------------------------------------------
-
--> # Supported markdown formatting <-
-
-Leading *\** or *-* indicate lists.
-
-list
-\* major
-\    - minor
-\        - \*important\*
-\          detail
-\    - minor
-
-becomes
-
-list
-* major
-    - minor
-        - *important*
-          detail
-    - minor
-
--------------------------------------------------
-
--> # Supported markdown formatting <-
-
-A single *\<br\>* or *^* in a line indicates mdp
-to stop the output on that position.
-
-This can be used to show bullet points
-line by line.
-
-*\<br\>* is also not displayed in HTML converted
-output.
-
-Agenda
+That's it
 <br>
-* major
+
+*What if the client wants to connect with other clients?*
 <br>
-    * minor
+
+It can't
+
+-------------------------------------------------
+
+
+
+-> # What Are Our Options? <-
+
+- Long Polling
 <br>
-* major
-  ^
-    * minor
-      ^
-        * detail
+- Server-Sent Events
+<br>
+- *WebSockets*
 
 -------------------------------------------------
 
--> # Supported markdown formatting <-
 
-Leading *->* indicates centering.
 
-\-> # test <-
-\-> ## test <-
-\-> test
-\-> \_\*test\*\_ <-
+-> # What Are WebSockets? <-
 
-becomes
+*WebSockets* represent a standard for bi-directional communication between a
+client and a server which involves creating a TCP connection that links them
+together.
 
--> # test <-
--> ## test <-
--> test
--> _*test*_ <-
+<br>
+The TCP connection sits outside of HTTP, and thus runs a separate server to
+manage this communication.
 
--------------------------------------------------
-
--> # Supported markdown formatting <-
-
-URL in pandoc style are supported:
-
-\[Google](http://www.google.com/)
-
-becomes
-
-[Google](http://www.google.com/)
+<br>
+To initialize this connection, a *handshake* is performed between the client and
+the server
 
 -------------------------------------------------
 
--> ## More information about markdown <-
-
-can be found in the [markdown documentation](http://daringfireball.net/projects/markdown/).
-
--------------------------------------------------
-
--> # Support for UTF-8 special characters <-
-
-Here are some examples.
-
-ae = ä, oe = ö, ue = ü, ss = ß
-upsilon = Ʊ, phi = ɸ
-
-▛▀▀▀▀▀▀▀▀▀▜
-▌rectangle▐
-▙▄▄▄▄▄▄▄▄▄▟
 
 
--------------------------------------------------
+-> # The Handshake <-
 
--> # Suspend your presentation for hands-on examples <-
+There are 2 main steps in the WebSocket handshake.
+<br>
 
-Use *Ctrl + z* to suspend the presentation.
+1. An HTTP request is made with an *upgrade* header set to *websocket*, asking
+   the server to begin the handshake.
+<br>
 
-Use *fg* to resume it.
+2. If the server supports WebSockets, it will send a *101* response code back,
+   which stands for *Switching Protocols*.
+<br>
+
+The handshake is complete.
 
 -------------------------------------------------
 
--> # Convert your presentation to PDF <-
 
-To publish your presentation later on, you may
-want to convert it to PDF.
 
-This can be achieved by two additional tools:
+-> # What We're Going to Build <-
 
-\- *markdown* to convert to HTML
-\- *wkhtmltopdf* to convert from HTML to PDF
+A simple chat application that uses WebSockets
 
-After installing them, you can simply type:
-
-    $ markdown sample.md | wkhtmltopdf - sample.pdf
+Examle: [http://websockets.thesocietea.org](http://websockets.thesocietea.org)
 
 -------------------------------------------------
 
--> ## Last words <-
 
-I hope you like *mdp*.
 
-If you observe strange behavior, feel free to
-open an issue on [GitHub](https://github.com/visit1985/mdp).
+-> WebSocket Downfalls <-
+
+- Browser Support
+- Extra Service Running
+- More Complexity (arguable)
+
+-------------------------------------------------
+
+
+
+-> Thanks! <-
+
+Blog post reviewing everything we did here:
+
+[https://thesocietea.org/2016/04/how-websockets-work-with-socket-io-demo/](https://thesocietea.org/2016/04/how-websockets-work-with-socket-io-demo/)
+
+
+
+*@thecodeboss* on Twitter
