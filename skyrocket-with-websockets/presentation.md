@@ -95,7 +95,7 @@ The handshake is complete.
 
 A simple chat application that uses WebSockets
 
-Examle: [http://websockets.thesocietea.org](http://websockets.thesocietea.org)
+Example: [http://websockets.thesocietea.org](http://websockets.thesocietea.org)
 
 -------------------------------------------------
 
@@ -106,6 +106,7 @@ Examle: [http://websockets.thesocietea.org](http://websockets.thesocietea.org)
 - Browser Support
 - Extra Service Running
 - More Complexity (arguable)
+- Cross-Site Scripting
 
 -------------------------------------------------
 

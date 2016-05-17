@@ -101,7 +101,7 @@ socket.on('message', function(data){
 -- server.js --
 
 
-    socket.broadcast.emit('message', data );
+    io.emit('message', data );
 
 
 // Add handlers in client.js for receiving data from server
@@ -112,20 +112,6 @@ socket.on('message', function(data){
   socket.on('message', function(data){
     $('.messages').append('<p>' + data + '</p>');
   });
-
-
-
-// Then - after showing it works - add in the jQuery bit to add it on your own machine
-// In the form handler, before it is emitted
-
-
-  $('.messages').append('<p>' + $('#my-message').val() + '</p>');
-
-
-// Then - if you want - reset the input after submitting
-
-
-  $('#my-message').val('');
 
 
 -----------END
