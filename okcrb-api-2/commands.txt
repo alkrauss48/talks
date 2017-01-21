@@ -1,0 +1,47 @@
+rails new blog --api
+
+rails g scaffold user first_name:string last_name:string email:string password:string
+rails g scaffold post title:string body:text user:references
+rails g scaffold comment body:text post:references user:references
+
+rake db:migrate
+
+rake test
+
+rails s # navigate to localhost:3000
+
+# Update seeds with seeds.rb
+
+rake db:seed
+
+# Show data
+
+# Add to models/user.rb
+has_many :posts
+has_many :comments
+
+# Add to models/poosts.rb
+has_many :comments
+
+erd
+
+# show erd.pdf
+
+# open Gemfile
+
+gem 'active_model_serializers'
+
+bundle
+
+rails g serializer user
+rails g serializer post
+rails g serializer comment
+
+# Append each serializer with attributes and belongs_to
+
+cd config/initializers
+touch active_model_serializers.rb
+
+ActiveModelSerializers.config.adapter = :json_api
+
+Show off http://jsonapi.org/
