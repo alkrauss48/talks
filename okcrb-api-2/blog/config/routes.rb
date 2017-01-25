@@ -1,6 +1,9 @@
+require 'api_constraints'
+
 Rails.application.routes.draw do
-  resources :comments
-  resources :posts
-  resources :users
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  scope module: :v1, constraints: ApiConstraints.new(version: 1, default: true) do
+    resources :comments
+    resources :posts
+    resources :users
+  end
 end

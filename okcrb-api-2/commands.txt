@@ -45,3 +45,111 @@ touch active_model_serializers.rb
 ActiveModelSerializers.config.adapter = :json_api
 
 Show off http://jsonapi.org/
+
+--
+
+Pagination
+
+--
+
+Pagination is handled by the client using a Link header
+( Explain Link header )
+
+Install API Pagination gem and will_paginate gem
+Kaminari will also work
+
+Add to Gemfile:
+
+gem 'will_paginate'
+gem 'api-pagination'
+
+restart the server
+
+Change all 3 controllers #index action to say "paginate" instead of "render"
+
+Show how pagination works.
+Show how it doesn't work with JSON API spec standards.
+
+Add in pagination initializer:
+cp ../files/initializers/api_pagination.rb ./config/initializers
+
+Explain what it does
+Restart the server
+
+Show now how pagination works with both JSON API spec and default ways
+
+--
+
+Versioning
+
+--
+
+No gems to install
+Explain 2 general ways to version: URL and using Accept header
+
+URL is easy to test, but doesn't represent the actual data
+Accept is more difficult to test, but fits best with the general purpose of
+versioning
+
+Do brief demo showing url pattern:
+
+routes.rb:
+scope module: :v1, path: 'v1' do
+  #routes
+end
+
+Then move all controllers into V1 module
+Move all controllers inside of v1 folder
+
+--
+
+Accept Header: Specifies which media types (aka MIME types) are acceptable for the response.
+
+Review MIME types:
+
+2 part identifier for file formats: a type and a sub-type.
+
+Example:
+
+application/json
+image/jpeg
+
+Specific MIME types use a "Registration Tree" prefix. vnd is a common one, and
+is used for media types associated with publicly available products.
+
+So, what we'll use is:
+
+application/vnd.example.v1
+
+curl -H 'Accept: application/vnd.example.v1' http://localhost:3000/users
+
+Now what we need to do is check for this header on every request, and route to
+the right controller.
+
+Typically you just version your routes and your controller (though you could
+version your serializers too).
+
+Copy API constraints file to lib
+
+cp ../files/lib/api_constraints.rb ./lib
+
+Review what it does (Determines whether the constraint matches)
+
+In routes.rb
+
+require 'api_constraints'
+
+We need to scope our routes
+
+scope module: :v1, constraints: ApiConstraints.new(version: 1, default: true) do
+
+The constraints option accepts an object which repsonds to the `matches?`
+method, which accepts the request object as a parameter. If `matches?` passes,
+then these routes will get used.
+
+Demo:
+
+Turn off 'default' in ApiConstraints object. Reload the browser, it will fail.
+But issue the following request, and it will pass
+
+curl -H 'Accept: application/vnd.example.v1' http://localhost:3000/users
