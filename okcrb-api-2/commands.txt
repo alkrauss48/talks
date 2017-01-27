@@ -46,13 +46,36 @@ ActiveModelSerializers.config.adapter = :json_api
 
 Show off http://jsonapi.org/
 
+Started in 2013 when Yehuda Katz was helping to build Ember.js. Became stable at
+v1.0 in May 2015.
+
 --
 
 Pagination
 
 --
 
-Pagination is handled by the client using a Link header
+You can use will_paginate or kaminari for pagination - but that doesn't get us
+all the way there. They're more geared towards server-side rendered views
+because they depend on the server to build the pagination links for the client.
+It's not sent in HTTP headers or anything. Obviously, this won't work for a JSON
+API.
+
+Furthermore, according to RFC 5988 - it's not a best practice to set pagination
+links in the body; You should use the Link header. This is where api-pagination
+comes in; it will not only automatically set certain HTTP headers to valuable
+pagination values (total pages, per page) and allow you to customize them - it
+also sets the Link header automatically for you to proper pagination links. It's
+the server's job to provide these - not the client's to create them.
+
+api_pagination depends on either will_paginate or kaminari; it doens't need to
+reinvent the wheel. It also makes pagination REALLY easy. The Link
+header is the right way to paginate an API.
+
+With AMS however, if you use will_paginate or kaminari, it will go ahead and
+return the links in the response body if you use the JSON API adapter. It's not a best practice, but it is a
+neat feature.
+
 ( Explain Link header )
 
 Install API Pagination gem and will_paginate gem
@@ -84,12 +107,16 @@ Versioning
 
 --
 
+Discuss the need for versioning
+
+Typically you just version your routes and your controller (though you could
+version your serializers too).
+
 No gems to install
 Explain 2 general ways to version: URL and using Accept header
 
-URL is easy to test, but doesn't represent the actual data
-Accept is more difficult to test, but fits best with the general purpose of
-versioning
+URL versioning is the easiest to understand, and it's also very easy to
+implement in Rails. You just stick the version number in your URL.
 
 Do brief demo showing url pattern:
 
@@ -101,7 +128,12 @@ end
 Then move all controllers into V1 module
 Move all controllers inside of v1 folder
 
+URL is easy to test, but doesn't represent the actual data - which is why it's
+not considered a best practice.
+
 --
+
+The more appropriate way to specify an API version is through the Accept header.
 
 Accept Header: Specifies which media types (aka MIME types) are acceptable for the response.
 
@@ -121,20 +153,13 @@ So, what we'll use is:
 
 application/vnd.example.v1
 
+Here, 'application' is the type, and 'vnd.example.v1' is the sub-type. That's
+the format we want the response to be in.
+
 curl -H 'Accept: application/vnd.example.v1' http://localhost:3000/users
 
 Now what we need to do is check for this header on every request, and route to
 the right controller.
-
-Typically you just version your routes and your controller (though you could
-version your serializers too).
-
-Copy API constraints file to lib
-
-cp ../files/lib/api_constraints.rb ./lib
-
-Review what it does (Determines whether the constraint matches)
-
 In routes.rb
 
 require 'api_constraints'
@@ -142,6 +167,12 @@ require 'api_constraints'
 We need to scope our routes
 
 scope module: :v1, constraints: ApiConstraints.new(version: 1, default: true) do
+
+Copy API constraints file to lib
+
+cp ../files/lib/api_constraints.rb ./lib
+
+Review what it does (Determines whether the constraint matches)
 
 The constraints option accepts an object which repsonds to the `matches?`
 method, which accepts the request object as a parameter. If `matches?` passes,
@@ -153,3 +184,6 @@ Turn off 'default' in ApiConstraints object. Reload the browser, it will fail.
 But issue the following request, and it will pass
 
 curl -H 'Accept: application/vnd.example.v1' http://localhost:3000/users
+
+Accept is more difficult to test, but fits best with the general purpose of
+versioning
