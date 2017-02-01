@@ -16,11 +16,13 @@ rake db:seed
 
 # Show data
 
+curl -X POST http://localhost:3000/users -d "user[first_name]=foo"
+
 # Add to models/user.rb
 has_many :posts
 has_many :comments
 
-# Add to models/poosts.rb
+# Add to models/posts.rb
 has_many :comments
 
 erd
