@@ -86,6 +86,18 @@ Became stable at v1.0 in May 2015.
 
 -> # Pagination <-
 
+Typically send links through response body
+
+<br>
+RFC 5988:
+Better to do it through the Link Header
+
+-------------------------------------------------
+
+
+
+-> # Pagination <-
+
 2 Gems:
 
 will_paginate
@@ -97,7 +109,9 @@ api-pagination
 
 -> # Pagination <-
 
-- Let the client figure it out
+Options:
+
+- No links at all
 <br>
 
 - Send links in response body
@@ -153,10 +167,6 @@ Set the version via the HTTP Accept header
 
 
 -> Thanks! <-
-
-Blog post reviewing everything we did here:
-
-[https://thesocietea.org/2016/04/how-websockets-work-with-socket-io-demo/](https://thesocietea.org/2016/04/how-websockets-work-with-socket-io-demo/)
 
 
 
