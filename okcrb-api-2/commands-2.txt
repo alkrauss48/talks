@@ -1,0 +1,60 @@
+maildev
+
+rails g mailer CommentMailer
+
+# in comment_mailer.rb
+
+default from: 'notifications@example.com'
+
+def new_comment(comment)
+  @comment = comment
+  mail(to: @comment.post.user.email, subject: "New Comment")
+end
+
+# Create:
+# new_comment.html.erb
+
+<h1>New Comment</h1>
+<p>Your post received a new comment from <%= @comment.user.first_name %> <%= @comment.user.last_name %></p>
+
+<p>Comment: <%= @comment.body %></p>
+
+# new_comment.text.erb
+
+New Comment
+Your post received a new comment from <%= @comment.user.first_name %> <%= @comment.user.last_name %>
+
+Comment: <%= @comment.body %>
+
+# In config/environments/development.rb:
+
+config.action_mailer.delivery_method = :smtp
+config.action_mailer.smtp_settings = {
+  :address => 'localhost',
+  :port => 1025
+}
+
+# Edit app/controllers/comments_controller.rb:
+# After comment save in #create action
+
+CommentMailer.new_comment(@comment).deliver_later
+
+# By default, this still sends it in the same process
+
+curl -X POST 'http://localhost:3000/comments' -d "comment[body]=foo" -d "comment[user_id]=2" -d "comment[post_id]=1"
+
+# Now to get sidekiq set up
+
+# Update Gemfile
+
+gem 'sidekiq'
+
+bundle install
+
+# Update config/application.rb
+
+config.active_job.queue_adapter = :sidekiq
+
+redis-server
+
+bundle exec sidekiq -q mailers
