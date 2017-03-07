@@ -1,6 +1,6 @@
 maildev
 
-rails g mailer CommentMailer
+rails g mailer Comment
 
 # in comment_mailer.rb
 
