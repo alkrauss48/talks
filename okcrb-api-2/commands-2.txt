@@ -31,7 +31,8 @@ Comment: <%= @comment.body %>
 config.action_mailer.delivery_method = :smtp
 config.action_mailer.smtp_settings = {
   :address => 'localhost',
-  :port => 1025
+  :port => 1025,
+  :openssl_verify_mode => 'none'
 }
 
 # Edit app/controllers/comments_controller.rb:
@@ -69,8 +70,23 @@ Time for Docker
 
 --
 
-cp ../files/docker-compose.yml .
 cp ../files/Dockerfile .
+
+# Review Dockerfile
+
+docker build . -t railsapp
+
+docker run -p 3000:3000 railsapp bundle exec rails s
+
+# Show off app
+
+cp ../files/docker-compose.yml .
+
+# Review Docker Compose file
+
+docker-compose up
+
+# Review Rails app
 
 # Add to docker-compose.yml
 
@@ -78,7 +94,6 @@ cp ../files/Dockerfile .
     image: djfarrelly/maildev
     ports:
       - "1080:80"
-      - "1025:25"
 
 # Change settings in config/environments/development.rb
 
