@@ -58,3 +58,62 @@ config.active_job.queue_adapter = :sidekiq
 redis-server
 
 bundle exec sidekiq -q mailers
+
+# Show mail success and sidekiq log
+
+curl -X POST 'http://localhost:3000/comments' -d "comment[body]=foo" -d "comment[user_id]=2" -d "comment[post_id]=1"
+
+--
+
+Time for Docker
+
+--
+
+cp ../files/docker-compose.yml .
+cp ../files/Dockerfile .
+
+# Add to docker-compose.yml
+
+  maildev:
+    image: djfarrelly/maildev
+    ports:
+      - "1080:80"
+      - "1025:25"
+
+# Change settings in config/environments/development.rb
+
+config.action_mailer.smtp_settings = {
+  :address => 'maildev',
+  :port => 25,
+  :openssl_verify_mode => 'none'
+}
+
+# Comment out sidekiq config in config/application.rb
+
+Do a test to show it still works:
+
+curl -X POST 'http://localhost:3000/comments' -d "comment[body]=foo" -d "comment[user_id]=2" -d "comment[post_id]=1"
+
+# Now add the following to the docker-compose.yml
+
+  redis:
+    image: redis
+  sidekiq:
+    build: .
+    command: bundle exec sidekiq -q mailers
+    volumes:
+      - .:/myapp
+    depends_on:
+      - redis
+
+# Uncomment out sidekiq config in config/application.rb
+
+cp ../files/initializers/sidekiq.rb config/initializers
+
+docker-compose down
+
+docker-compose up
+
+Run the curl command and see the logs
+
+curl -X POST 'http://localhost:3000/comments' -d "comment[body]=foo" -d "comment[user_id]=2" -d "comment[post_id]=1"
