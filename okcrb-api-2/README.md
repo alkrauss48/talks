@@ -3,7 +3,7 @@ By [Aaron Krauss](https://thesocietea.org)
 
 ## Part 1 - Best Practices when Building a JSON API with Rails
 
-Code found in : `./blog-final`
+Code found in : `./blog-best-practices`
 
 To run presentation:
 
