@@ -4,12 +4,23 @@ API with Docker
 By:
      Aaron Krauss
 
+\@thecodeboss
+
+@images/clevyr.png
+
+@images/baby.png
+
+@images/nintendo-switch.png
+
 What is Docker?
 
 We'll get there
     Baby Steps
 
 Our Game Plan:
+
+We're going to...
+
 Send an email
 
 @images/mind-blown.png
