@@ -1,0 +1,71 @@
+Running a Rails
+API with Docker
+
+By:
+     Aaron Krauss
+
+What is Docker?
+
+We'll get there
+    Baby Steps
+
+Our Game Plan:
+Send an email
+
+@images/mind-blown.png
+
+But not just any email
+
+An email when a new
+comment is created
+
+An email that is sent to the
+creator of the post
+
+An email
+
+For all man kind
+
+@images/freedom.png
+
+
+How will we do this?
+
+Our Process
+▸ Generate mailer
+▸ Hook up sidekiq
+▸ Send to maildev
+
+No
+Docker
+Yet?
+
+NO
+
+but...
+
+@images/soon.png
+
+Let's code!
+
+Phase 2
+      Put some Docker
+      in there
+
+What is Docker?
+
+@images/docker.png
+
+Let's rebuild
+everything
+in Docker
+
+@images/not-amused.png
+
+But for real.
+Let's code.
+
+thanks
+* @thecodeboss
+
+questions?
