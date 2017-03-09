@@ -36,6 +36,15 @@ Our Process
 ▸ Hook up sidekiq
 ▸ Send to maildev
 
+That's a lot of services
+
+4 to be exact
+
+▸ Rails server
+▸ Sidekiq
+▸ Redis
+▸ Maildev
+
 No
 Docker
 Yet?
