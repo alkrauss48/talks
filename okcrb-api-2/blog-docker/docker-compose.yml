@@ -1,0 +1,22 @@
+version: '2'
+services:
+  web:
+    build: .
+    command: bundle exec rails s
+    volumes:
+      - .:/myapp
+    ports:
+      - "3000:3000"
+  maildev:
+    image: djfarrelly/maildev
+    ports:
+      - "1080:80"
+  redis:
+    image: redis
+  sidekiq:
+    build: .
+    command: bundle exec sidekiq -q mailers
+    volumes:
+      - .:/myapp
+    depends_on:
+      - redis
