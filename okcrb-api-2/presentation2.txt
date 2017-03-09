@@ -76,6 +76,8 @@ What is Docker?
 
 @images/docker.png
 
+@images/tupperware.png
+
 Let's rebuild
 everything
 in Docker
