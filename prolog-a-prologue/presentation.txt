@@ -1,0 +1,53 @@
+Prolog
+- A Prologue -
+
+By:
+     Aaron Krauss
+
+\@thecodeboss
+
+@images/clevyr.png
+
+What is Prolog?
+
+So...
+
+What's a
+Declarative
+Language?
+
+Imperative Languages
+
+Where you tell the compiler
+(or interpreter) what to do
+
+Java
+JavaScript
+Ruby
+C#
+Python
+PHP
+etc.
+
+Isn't that how ALL programming works?
+
+Not Always
+
+Declarative Languages
+
+Where you describe to the compiler
+(or interpreter) what you want - but not
+exactly how to do it
+
+@images/not-amused.png
+
+How Prolog Works
+
+▸ Facts
+▸ Rules
+▸ Queries
+
+thanks
+* @thecodeboss
+
+questions?
