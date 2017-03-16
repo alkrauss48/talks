@@ -1,0 +1,52 @@
+Prolog was created in 1972 as a logic programming language - a set of sentences
+expressing facts and rules. Facts and rules represent our knowledge base.
+
+Used commonly today for natural language processing
+
+Use ; or a to view more results from a prolog query
+
+# Code a custom version of example 1
+
+swipl ./scripts/example-1.pl
+
+
+# Show off variables
+
+['scripts/example-2.pl'].
+
+# Words that are lowercase are atoms, or fixed values
+# Words that are uppercase are variables
+
+
+# Show off unification
+['scripts/example-3.pl'].
+
+
+# Discuss how this is probably different from just about any other language
+you've ever dealt with
+
+
+# Recursion
+
+['scripts/example-4.pl'].
+
+# Hits 2 clauses - but only one must be true for the rule to be true
+
+
+# Lists & Tuples
+
+Prolog has support for lists and tuples. Do a CLI demo over this
+
+(1, 2, 3) = (1, 2, 3).
+
+(1, 2, 3, 4) = (1, 2, 3).
+
+(A, B, C) = (1, 2, 3).
+
+[a, b, c] = [Head|Tail].
+
+[a, b, c] = [a|[Head|Tail]].
+
+[a, b, c, d, e] = [_, _|[Head|_]].
+
+# Sudoku

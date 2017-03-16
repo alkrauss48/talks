@@ -9,6 +9,9 @@ By:
 @images/clevyr.png
 
 What is Prolog?
+# Prolog was created in 1972 by Alain Colmerauer, and it's a logic programming
+# language - a set of sentences expressing facts and rules.
+# Used commonly today for natural language processing
 
 So...
 
