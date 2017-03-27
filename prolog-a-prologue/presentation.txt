@@ -11,7 +11,16 @@ By:
 What is Prolog?
 # Prolog was created in 1972 by Alain Colmerauer, and it's a logic programming
 # language - a set of sentences expressing facts and rules.
-# Used commonly today for natural language processing
+
+PROLOG - PROgramming in LOGic
+
+@images/mind-blown.png
+
+Logical Programming
+
+A set of sentences in logical form,
+expressing facts and rules about some
+problem domain.
 
 So...
 
@@ -50,7 +59,31 @@ How Prolog Works
 ▸ Rules
 ▸ Queries
 
+You define a Knowledge Base
+And then you query it
+
+Commonly used today for natural language processing
+
+@images/watson.png
+
+Sudoku
+
+@images/sudoku.png
+
+@images/sudoku-small.png
+
+Takeaways
+
+Prolog is powerful when used
+in the right situation
+
+It's silly when used in
+the wrong situation
+
+@images/book-cover.png
+
 thanks
 * @thecodeboss
+* thesocietea.org
 
 questions?
