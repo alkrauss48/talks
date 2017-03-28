@@ -8,6 +8,10 @@ By:
 
 @images/clevyr.png
 
+@images/code-org.png
+
+https://code.org/volunteer
+
 What is Prolog?
 # Prolog was created in 1972 by Alain Colmerauer, and it's a logic programming
 # language - a set of sentences expressing facts and rules.
