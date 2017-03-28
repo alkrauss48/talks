@@ -90,4 +90,6 @@ thanks
 * @thecodeboss
 * thesocietea.org
 
+https://github.com/alkrauss48/talks
+
 questions?
