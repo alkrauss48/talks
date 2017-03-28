@@ -5,11 +5,15 @@ A 45 minute talk given at the [OKC Functional Programming](https://www.meetup.co
 
 ---
 
-Code found in : `./code`
+Code found in : `./scripts`
 
 To run this presentation:
 
 ```./sent presentation.txt```
+
+To run this code (Must have `swipl` installed):
+
+```swipl scripts/examples/example-1.pl```
 
 ## Talk Description
 
