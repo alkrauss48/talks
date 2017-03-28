@@ -12,9 +12,15 @@ By:
 
 https://code.org/volunteer
 
+@images/medieval-faire.png
+
 What is Prolog?
 # Prolog was created in 1972 by Alain Colmerauer, and it's a logic programming
 # language - a set of sentences expressing facts and rules.
+
+It's not Functional
+
+@images/not-amused.png
 
 PROLOG - PROgramming in LOGic
 
@@ -54,8 +60,6 @@ Declarative Languages
 Where you describe to the compiler
 (or interpreter) what you want - but not
 exactly how to do it
-
-@images/not-amused.png
 
 How Prolog Works
 
