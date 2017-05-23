@@ -1,0 +1,37 @@
+Getting Started with F#
+
+By:
+      @thecodeboss
+
+What is F#?
+
+@images/fsharp-logo.png
+
+Functional
+
+.NET Framework
+
+Kind of like Haskell, Erlang,
+Scala, Clojure, etc.
+
+But kind of like C# and VB.NET
+
+1) .NET Framework
+
+Follows the CLI
+(Common Language Infrastructure)
+
+Gets compiled down into CIL
+(Common Intermediate Language)
+
+Runs on the CLR
+(Common Language Runtime)
+
+@images/cli.png
+
+You can integrate C#, F#, VB.NET, etc.
+
+F# natively supports .NET classes,
+interfaces, and structures
+
+2) Functional Programming
