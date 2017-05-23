@@ -1,0 +1,50 @@
+What Is Ruby?
+
+Compiled vs Interpreted
+Memory Management
+Type Systems
+Concurrency
+
+MRI
+
+Compiled vs Interpreted
+
+Memory Management
+
+Stack vs Heap
+
+Garbage Collection
+
+Reference Counting
+Mark-Sweep
+Mark-Compact
+Copying
+Generational
+
+Type Systems
+
+Static vs Dynamic
+
+Reflection / Type Introspection
+
+Strong vs Weak
+
+x = 1
+y = "2"
+x + y = ?
+
+Common Mistake
+
+int x = 5;
+
+Type Safety
+
+Static/Dynamic deals with *when*
+Strong/Weak deals with *how*
+
+Concurrency
+
+Global Interpreter Lock
+
+Thanks
+* @thecodeboss
