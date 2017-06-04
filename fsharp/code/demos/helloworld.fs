@@ -1,7 +1,7 @@
 open System
 
 [<EntryPoint>]
-let main argv =
-  printfn "Hello World"
-  Console.ReadLine() |> ignore
-  0
+let main args =
+    printfn "Arguments passed to function : %A" args
+    // Return 0. This indicates success.
+    0

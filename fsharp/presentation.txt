@@ -42,7 +42,7 @@ Functional Programming
 
 Some Core Concepts
 
-a) Pure Functions
+1) Pure Functions
 (No side effects)
 
 Side Effects:
@@ -106,8 +106,10 @@ Concurrency
 
 Concurrency vs Parellelism
 
-More commin to use
+More common to use
 async in F#
+
+@images/success-kid.png
 
 Thanks!
 @thecodeboss

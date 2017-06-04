@@ -22,3 +22,8 @@ foo <- 10;;
 // import script into repl:
 #load "./code/add.fs";;
 open Add
+
+Pipe-forward operator (|>)
+
+Pipe-forward operator lets you pass an intermediate result onto the next
+function
