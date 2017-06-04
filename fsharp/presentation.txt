@@ -16,7 +16,11 @@ Scala, Clojure, etc.
 
 But kind of like C# and VB.NET
 
-1) .NET Framework
+Quiz
+
+.NET Framework
+
+It's more of an ecosytem than a framework
 
 Follows the CLI
 (Common Language Infrastructure)
@@ -34,4 +38,77 @@ You can integrate C#, F#, VB.NET, etc.
 F# natively supports .NET classes,
 interfaces, and structures
 
-2) Functional Programming
+Functional Programming
+
+Some Core Concepts
+
+a) Pure Functions
+(No side effects)
+
+Side Effects:
+
+Modifying state
+
+Accessesing Variables outside of scope
+
+Reading/Writing to disk
+
+Printing to console
+
+2) Referential Transparency
+
+foo() => 8
+
+This means you can't use things like random numbers
+
+3) Immutable Variables
+
+Why would anyone use FP?
+
+Concurrency
+
+Testability
+
+It's just plain simple
+
+Most FP languages won't be true FP
+
+F#
+
+Demo
+
+Statically Typed
+
+let x = 10
+
+Is it strongly or weakly typed?
+
+F# is strongly typed
+
+It does use Type Inference though
+
+Higher Order Functions
+
+3 key higher order functions
+you'll use in any language
+
+Map
+Filter
+Fold
+
+Map
+
+Filter
+
+Fold
+
+Concurrency
+
+Concurrency vs Parellelism
+
+More commin to use
+async in F#
+
+Thanks!
+@thecodeboss
+thesocietea.org

@@ -3,3 +3,22 @@ fsharpc file.fs                    (F# compiler)
 xbuild                             (builds .fsproj projects and .sln files)
 mono file.exe arg1 ... argN        (runs a compiled F# program)
 mkbundle --static file.exe -o file (makes a static native image, including the F# runtime)
+
+// Foo is a binding
+let foo = 20;;
+
+foo <- 10;; // Error
+
+( <- is the assignment operator )
+
+You can do shadowing though:
+let foo = 20;;
+let foo = 10;;
+
+let mutable foo = 20;;
+
+foo <- 10;;
+
+// import script into repl:
+#load "./code/add.fs";;
+open Add
