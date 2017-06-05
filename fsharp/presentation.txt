@@ -3,6 +3,12 @@ Getting Started with F#
 By:
       @thecodeboss
 
+@images/clevyr.png
+
+Disclaimer
+
+So why give this talk?
+
 What is F#?
 
 @images/fsharp-logo.png
