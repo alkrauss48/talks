@@ -1,0 +1,113 @@
+Python vs Ruby
+
+Created Dates
+
+Python
+1991 - Guido van Rossum
+
+Ruby
+1995 - Yukihiro Matsumoto
+
+Common Projects
+
+Web Frameworks:
+Rails - Ruby (2005)
+Django - Python (2003)
+
+Micro Web Frameworks:
+Sinatra - Ruby
+Flask - Python
+
+CPython
+
+MRI (also called CRuby)
+
+Both written in C
+
+Both OO
+
+Compiled vs Interpreted
+Memory Management
+Type Systems
+Concurrency
+
+Compiled vs Interpreted
+
+Memory Management
+
+Stack vs Heap
+
+Garbage Collection
+
+Reference Counting
+Mark-Sweep
+Mark-Compact
+Copying
+Generational
+
+Type Systems
+
+Static vs Dynamic
+
+Reflection / Type Introspection
+
+Strong vs Weak
+
+x = 1
+y = "2"
+x + y = ?
+
+Common Mistake
+
+int x = 5;
+
+Type Safety
+
+Static/Dynamic deals with *when*
+Strong/Weak deals with *how*
+
+Concurrency
+
+Global Interpreter Lock
+
+Differences
+
+Differences: Culture
+
+Python has conventions and best practices
+
+"pythonic"
+
+Ruby has many ways to do the same thing
+
+It also employs magic
+
+Differences: Community
+
+Python is more popular and diverse than Ruby
+
+Ruby's popularity is from Rails
+
+Python is used in math, science, academia, GUI apps, web, etc.
+
+Differences: Who Uses Them
+
+Python
+
+Google, Pinterest, Instagram, National Geographic,
+Mozilla Firefox, and the Washington Post.
+
+Ruby
+
+Apple, Twitter, Airbnb,
+Shopify, Github, and Groupon.
+
+Differences: Code
+
+In ruby, nearly everything is an object
+(including classes and modules)
+
+Blocks
+
+Thanks
+* @thecodeboss
