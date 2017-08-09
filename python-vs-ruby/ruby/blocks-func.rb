@@ -1,11 +1,15 @@
-def has_a_block
+def accepts_block
   puts "before block"
 
-  yield if block_given?
+  yield(5) if block_given?
 
   puts "after block"
 end
 
-has_a_block do
-  puts "in the block"
+accepts_block do |x|
+  puts "in block #{x}"
 end
+
+accepts_block
+
+

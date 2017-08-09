@@ -1,9 +1,17 @@
 Python vs Ruby
 
-Created Dates
+@images/clevyr.png
+
+@images/clevyr-labs-logo.png
+
+Birth
+
+@images/python.png
 
 Python
 1991 - Guido van Rossum
+
+@images/ruby.png
 
 Ruby
 1995 - Yukihiro Matsumoto
@@ -18,11 +26,11 @@ Micro Web Frameworks:
 Sinatra - Ruby
 Flask - Python
 
-CPython
+Dependency Management
+Bundler - Ruby
+Pip + Virtualenvs - Python
 
-MRI (also called CRuby)
-
-Both written in C
+Demo
 
 Both OO
 
@@ -30,6 +38,12 @@ Compiled vs Interpreted
 Memory Management
 Type Systems
 Concurrency
+
+CPython
+
+MRI (also called CRuby)
+
+Both written in C
 
 Compiled vs Interpreted
 
@@ -40,10 +54,7 @@ Stack vs Heap
 Garbage Collection
 
 Reference Counting
-Mark-Sweep
-Mark-Compact
-Copying
-Generational
+Tracing Algorithms
 
 Type Systems
 
@@ -88,7 +99,8 @@ Python is more popular and diverse than Ruby
 
 Ruby's popularity is from Rails
 
-Python is used in math, science, academia, GUI apps, web, etc.
+Python is used in math, science,
+academia, GUI apps, web, etc.
 
 Differences: Who Uses Them
 
@@ -102,12 +114,8 @@ Ruby
 Apple, Twitter, Airbnb,
 Shopify, Github, and Groupon.
 
-Differences: Code
-
-In ruby, nearly everything is an object
-(including classes and modules)
-
-Blocks
+Demo
 
 Thanks
 * @thecodeboss
+* thesocietea.org
