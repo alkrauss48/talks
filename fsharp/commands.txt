@@ -23,7 +23,41 @@ foo <- 10;;
 #load "./code/add.fs";;
 open Add
 
+
+mcs -target:library -out:build/arith.dll demos/arith.cs
+
+fsharpi
+
+#r "../build/arith.dll"
+let arith = MyMath.Arith()
+let x = arith.Add(10, 20)
+
 Pipe-forward operator (|>)
 
 Pipe-forward operator lets you pass an intermediate result onto the next
 function
+
+Map function:
+map is the name of a higher-order function that applies a given function to
+each element of a list, returning a list of results in the same order. It is
+often called apply-to-all when considered in functional form.
+
+fsharpc demos/map.fs --out:build/map.exe
+
+Filter function:
+filter is a higher-order function that processes a data structure (usually a
+list) in some order to produce a new data structure containing exactly those
+elements of the original data structure for which a given predicate returns the
+boolean value true.
+
+fsharpc demos/filter.fs --out:build/filter.exe
+
+Fold/Reduce/Inject function:
+fold (also termed reduce, accumulate, aggregate, compress, or inject) refers to a
+family of higher-order functions that analyze a recursive data structure and
+through use of a given combining operation, recombine the results of recursively
+processing its constituent parts, building up a return value.
+
+fsharpc demos/fold.fs --out:build/fold.exe
+
+fsharpc demos/async.fs --out:build/async.exe
