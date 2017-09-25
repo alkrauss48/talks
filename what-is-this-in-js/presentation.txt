@@ -1,0 +1,16 @@
+What is this?
+
+By @thecodeboss
+
+@images/clevyr.png
+
+4 ways to set "this"
+
+Default
+Soft binding
+Hard binding
+"new" keyword
+
+Thanks
+@thecodeboss
+thesocietea.org
