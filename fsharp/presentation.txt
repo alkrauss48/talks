@@ -22,8 +22,6 @@ Scala, Clojure, etc.
 
 But kind of like C# and VB.NET
 
-Quiz
-
 .NET Framework
 
 It's more of an ecosytem than a framework
@@ -51,16 +49,6 @@ Some Core Concepts
 1) Pure Functions
 (No side effects)
 
-Side Effects:
-
-Modifying state
-
-Accessesing Variables outside of scope
-
-Reading/Writing to disk
-
-Printing to console
-
 2) Referential Transparency
 
 foo() => 8
@@ -68,14 +56,6 @@ foo() => 8
 This means you can't use things like random numbers
 
 3) Immutable Variables
-
-Why would anyone use FP?
-
-Concurrency
-
-Testability
-
-It's just plain simple
 
 Most FP languages won't be true FP
 
