@@ -1,0 +1,129 @@
+Intro to Programming
+
+By @thecodeboss
+
+@images/clevyr.png
+
+Day to Day
+Different Languages
+Coding in a Team
+Programming Basics
+Different Types of Programming
+
+My Day to Day
+
+Check email and slack
+
+Code
+
+Ping Pong
+
+Code
+
+Occasional meetings
+
+Go Home
+
+Now when I say code...
+
+I mean a lot of Googling
+
+Different Languages
+
+Software
+Web
+Mobile
+Game
+
+Software
+
+C/C++
+Java
+C#
+Go
+Python
+
+Web
+
+Static & Dynamic Websites
+
+Static Websites
+
+HTML
+CSS
+Javascript
+
+These are also called
+Front-End languages
+
+Dynamic Websites
+
+Same languages as Static Sites,
+But you also would use...
+
+PHP
+Python
+Ruby
+C#
+JavaScript (Node.js)
+
+Mobile
+
+Swift (iOS)
+Java (Android)
+HTML/CSS/JavaScript
+
+Game
+
+C#
+C++
+JavaScript
+
+Coding in a Team
+
+Use Comments
+
+Use Whitespace
+
+Name things appropriately
+
+Version Control
+
+@images/version-control.png
+
+Programming Basics
+
+Things that all languages have
+
+Variables
+Functions
+Loops
+
+Demo
+
+Different Types of Programming
+
+Procedural
+Object-Oriented
+Functional
+
+Procedural
+
+Breaks code into procedures
+
+Object-Oriented
+
+Breaks code into objects
+
+Objects are combinations of
+procedures and attributes
+
+Functional
+
+Similar to procedural
+
+Emphasizes "pure" functions
+
+Thanks
+@thecodeboss
+thesocietea.org
