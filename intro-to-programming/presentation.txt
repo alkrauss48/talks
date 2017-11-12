@@ -75,8 +75,8 @@ HTML/CSS/JavaScript
 
 Game
 
-C#
-C++
+C# (Unity)
+C++ (Unreal)
 JavaScript
 
 Coding in a Team
@@ -91,10 +91,13 @@ Version Control
 
 @images/version-control.png
 
+Git is the most popular VCS
+
 Programming Basics
 
 Things that all languages have
 
+Data Types
 Variables
 Functions
 Loops
@@ -123,6 +126,7 @@ Functional
 Similar to procedural
 
 Emphasizes "pure" functions
+Immutable variables
 
 Thanks
 @thecodeboss
