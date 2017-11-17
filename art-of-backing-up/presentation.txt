@@ -1,0 +1,91 @@
+Zen and the Art
+of the IT Backup
+
+By
+@thecodeboss
+@tallmatcha
+@caseymcneil
+
+@images/clevyr.png
+
+7 Principles
+
+Principle 1
+
+Scope
+
+@images/principle-1.png
+
+Backup ALL your Data
+
+Principle 2
+
+Repetition
+
+@images/principle-2.png
+
+Continuously Backup
+
+Principle 3
+
+Distribution
+
+@images/principle-3.png
+
+Keep Backups Offsite
+
+Principle 4
+
+History
+
+@images/principle-4.png
+
+Keep Old Backups
+
+Principle 5
+
+Verification
+
+@images/principle-5.png
+
+Test your Backups
+
+Principle 6
+
+Security
+
+@images/principle-6.png
+
+Secure your Backups
+
+Principle 7
+
+Continuity
+
+@images/principle-7.png
+
+Make sure you can restore
+your backups quickly
+
+Moral of the Story
+
+In Review
+
+Scope
+Repetition
+Distribution
+History
+Verification
+Security
+Continuity
+
+So we built...
+
+@images/jackpot-backup.png
+
+Taco Bell Programming
+
+Thanks
+@clevyr
+clevyr.com
+clevyrlabs.com

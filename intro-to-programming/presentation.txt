@@ -112,9 +112,20 @@ Functional
 
 Procedural
 
+C
+Fortran
+Ada
+Go
+
 Breaks code into procedures
 
 Object-Oriented
+
+Java
+Python
+Ruby
+C++
+C#
 
 Breaks code into objects
 
@@ -123,10 +134,19 @@ procedures and attributes
 
 Functional
 
+Haskell
+Erlang
+Clojure
+Scala
+
 Similar to procedural
 
 Emphasizes "pure" functions
 Immutable variables
+
+Final Thought
+
+Keep Things Simple
 
 Thanks
 @thecodeboss

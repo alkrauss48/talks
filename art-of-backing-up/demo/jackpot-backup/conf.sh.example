@@ -1,0 +1,47 @@
+### EDIT THIS FILE
+
+#####################
+## REQUIRED CONFIG ##
+#####################
+
+# Perform all of your backup logic here, such as creating backup files.
+#
+# @param    {string} $1 - The directory where you should place your backup files
+# @returns  {void}
+main_backup () {
+  # Something like...
+  # mysqldump -u foo -p bar db > $1/backup.sql
+}
+
+#########################
+## END REQUIRED CONFIG ##
+#########################
+
+#####################
+## OPTIONAL CONFIG ##
+#####################
+
+# Perform any extra logic once your backup has been created.
+#
+# @param    {file} $1 - the compressed backup file
+# @returns  {void}
+after_backup () {
+  # Something like...
+  # scp $1 new.server.com:~/backups
+}
+
+# To backup to an AWS S3 Bucket, fill out the following variables
+# BEGIN AWS CONFIG
+#
+S3_BUCKET="some-s3-bucket"      # Name of S3 bucket
+AWS_PATH="/full/path/to/aws"    # Full path to aws command
+#
+# END AWS CONFIG
+
+# To backup to a Google Cloud bucket, fill out the following variables
+# BEGIN GOOGLE CLOUD CONFIG
+#
+GOOGLE_CLOUD_BUCKET="some-google-cloud-storage-bucket"  # Name of Google Cloud bucket
+GSUTIL_PATH="/full/path/to/gsutil"                      # Full path to gsutil command
+#
+# END GOOGLE CLOUD CONFIG

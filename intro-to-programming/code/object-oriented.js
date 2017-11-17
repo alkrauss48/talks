@@ -1,6 +1,6 @@
 class Demo {
   constructor() {
-    this.list = [1, 2, 3]
+    this.list = [1, 2, 3];
   }
 
   printArray() {

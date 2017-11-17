@@ -11,5 +11,6 @@ function printArray(list) {
 }
 
 var list = [1, 2, 3];
+x
 
 printArray(list);
