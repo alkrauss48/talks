@@ -17,6 +17,8 @@ Principles of Game Dev
 
 Demo
 
+@images/phaser.png
+
 Resources
 * https://developer.mozilla.org/en-US/docs/Games/Tutorials
 
