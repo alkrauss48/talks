@@ -1,0 +1,27 @@
+Game Dev in
+Plain JS
+
+By @thecodeboss
+
+@images/clevyr.png
+
+@images/clevyr-labs.png
+
+@images/jesse.png
+
+Principles of Game Dev
+
+* Game Loop
+* Handling user input
+
+Demo
+
+Resources
+* https://developer.mozilla.org/en-US/docs/Games/Tutorials
+
+Or just google:
+"game dev with js tutorial"
+
+Thanks
+@thecodeboss
+thesocietea.org
