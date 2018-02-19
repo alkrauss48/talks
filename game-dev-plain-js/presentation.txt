@@ -13,6 +13,7 @@ Principles of Game Dev
 
 * Game Loop
 * Handling user input
+* Math
 
 Demo
 

@@ -7,10 +7,35 @@ var dx = 2;
 var dy = -2;
 var ballRadius = 10;
 
-// NEW CODE
 var paddleHeight = 10;
 var paddleWidth = 75;
 var paddleX = (canvas.width-paddleWidth)/2;
+// NEW CODE
+var paddleDx = 7;
+
+var rightPressed;
+var leftPressed;
+
+function keyDownHandler(event) {
+  if(event.keyCode == 39) {
+    rightPressed = true;
+  }
+  else if(event.keyCode == 37) {
+    leftPressed = true;
+  }
+}
+
+function keyUpHandler(event) {
+  if(event.keyCode == 39) {
+    rightPressed = false;
+  }
+  else if(event.keyCode == 37) {
+    leftPressed = false;
+  }
+}
+
+document.addEventListener('keydown', keyDownHandler, false);
+document.addEventListener('keyup', keyUpHandler, false);
 // END NEW CODE
 
 function drawBall() {
@@ -34,9 +59,7 @@ function drawPaddle() {
 function draw() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   drawBall();
-  // NEW CODE
   drawPaddle();
-  // END NEW CODE
 
   if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
     dx = -dx;
@@ -45,6 +68,15 @@ function draw() {
   if (y + dy < ballRadius) {
     dy = -dy;
   }
+
+  // NEW CODE
+  if(rightPressed) {
+    paddleX += paddleDx;
+  }
+  else if(leftPressed) {
+    paddleX -= paddleDx;
+  }
+  // END NEW CODE
 
   x += dx;
   y += dy;

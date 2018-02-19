@@ -7,11 +7,34 @@ var dx = 2;
 var dy = -2;
 var ballRadius = 10;
 
-// NEW CODE
 var paddleHeight = 10;
 var paddleWidth = 75;
 var paddleX = (canvas.width-paddleWidth)/2;
-// END NEW CODE
+var paddleDx = 7;
+
+var rightPressed;
+var leftPressed;
+
+function keyDownHandler(event) {
+  if(event.keyCode == 39) {
+    rightPressed = true;
+  }
+  else if(event.keyCode == 37) {
+    leftPressed = true;
+  }
+}
+
+function keyUpHandler(event) {
+  if(event.keyCode == 39) {
+    rightPressed = false;
+  }
+  else if(event.keyCode == 37) {
+    leftPressed = false;
+  }
+}
+
+document.addEventListener('keydown', keyDownHandler, false);
+document.addEventListener('keyup', keyUpHandler, false);
 
 function drawBall() {
   ctx.beginPath();
@@ -21,7 +44,6 @@ function drawBall() {
   ctx.closePath();
 }
 
-// NEW CODE
 function drawPaddle() {
   ctx.beginPath();
   ctx.rect(paddleX, canvas.height - paddleHeight, paddleWidth, paddleHeight);
@@ -29,21 +51,34 @@ function drawPaddle() {
   ctx.fill();
   ctx.closePath();
 }
-// END NEW CODE
 
 function draw() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   drawBall();
-  // NEW CODE
   drawPaddle();
-  // END NEW CODE
 
   if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
     dx = -dx;
   }
 
-  if (y + dy < ballRadius) {
+  // NEW CODE
+  if(
+    y + dy < ballRadius ||
+    (
+      y + dy > canvas.height - ballRadius - paddleHeight &&
+      x + dx > paddleX &&
+      x + dx < paddleX + paddleWidth
+    )
+  ) {
     dy = -dy;
+  }
+  // END NEW CODE
+
+  if(rightPressed && (paddleX + paddleWidth) < canvas.width) {
+    paddleX += paddleDx;
+  }
+  else if(leftPressed && paddleX > 0) {
+    paddleX -= paddleDx;
   }
 
   x += dx;
