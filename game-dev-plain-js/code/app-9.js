@@ -71,7 +71,7 @@ function draw() {
   ) {
     dy = -dy;
   // NEW CODE
-  } else if (y + dy > canvas.height - ballRadius) {
+  } else if (y + dy > canvas.height) {
     location.reload();
   // END NEW CODE
   }

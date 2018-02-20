@@ -1,11 +1,13 @@
-# What is `this`
+# Game Dev with Plain JS
 
-An exploration of the 4 various ways to set `this` in JavaScript (in increasing
-priority):
+Building single-player pong one step at a time. No libraries.
 
-* Default
-* Soft binding
-* Hard binding
-* `new` keyword
+## To Run
+```
+php -S index.php localhost:7009
 
-Run the examples in `/code` to check them out
+# Using ports 7000-7009 will use the different scripts in /code
+```
+
+Run through the tutorials yourself here:
+https://developer.mozilla.org/en-US/docs/Games/Tutorials

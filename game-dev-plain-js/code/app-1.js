@@ -16,7 +16,9 @@ function drawBall() {
 // END NEW CODE
 
 function draw() {
+  // NEW CODE
   drawBall();
+  // END NEW CODE
 
   requestAnimationFrame(draw);
 }

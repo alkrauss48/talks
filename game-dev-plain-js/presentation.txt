@@ -7,12 +7,17 @@ By @thecodeboss
 
 @images/clevyr-labs.png
 
+We're Hiring!
+clevyr.com/careers
+
 @images/jesse.png
 
-Principles of Game Dev
+(Aaron's) Principles
+of Game Dev
 
 * Game Loop
 * Handling user input
+* Lots of variables
 * Math
 
 Demo

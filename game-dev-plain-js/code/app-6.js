@@ -46,7 +46,6 @@ function drawBall() {
   ctx.closePath();
 }
 
-// NEW CODE
 function drawPaddle() {
   ctx.beginPath();
   ctx.rect(paddleX, canvas.height - paddleHeight, paddleWidth, paddleHeight);
@@ -54,7 +53,6 @@ function drawPaddle() {
   ctx.fill();
   ctx.closePath();
 }
-// END NEW CODE
 
 function draw() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
