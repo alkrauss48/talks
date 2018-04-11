@@ -34,8 +34,8 @@ function keyUpHandler(event) {
   }
 }
 
-document.addEventListener('keydown', keyDownHandler, false);
-document.addEventListener('keyup', keyUpHandler, false);
+document.addEventListener('keydown', keyDownHandler);
+document.addEventListener('keyup', keyUpHandler);
 // END NEW CODE
 
 function drawBall() {

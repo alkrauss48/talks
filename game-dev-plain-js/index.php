@@ -5,7 +5,7 @@
     <title>Game Development in Plain JavaScript</title>
     <style>
       * { padding: 0; margin: 0; }
-      canvas { background: #eee; display: block; margin: 0 auto; }
+      canvas { background: #ccc; display: block; margin: 0 auto; }
     </style>
   </head>
   <body>

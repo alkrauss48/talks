@@ -7,11 +7,6 @@ By @thecodeboss
 
 @images/clevyr-labs.png
 
-We're Hiring!
-clevyr.com/careers
-
-@images/jesse.png
-
 (Aaron's) Principles
 of Game Dev
 
@@ -24,7 +19,17 @@ Demo
 
 @images/phaser.png
 
+@images/babylon.png
+
 Resources
+
+Learn JavaScript
+
+Code School
+Code Academy
+Pluralsight
+
+Learn JS Game Dev
 * https://developer.mozilla.org/en-US/docs/Games/Tutorials
 
 Or just google:
