@@ -1,0 +1,58 @@
+Automating Server
+Config with Ansible
+
+By @thecodeboss
+
+@images/clevyr.png
+
+@images/clevyr-labs.png
+
+Ansible
+
+@images/ansible-logo.png
+
+What It Does
+
+Automates everything related
+to server management
+
+* Install libs
+* Secure servers
+* Manage users
+* Start/stop services
+* Deploy apps
+* Anything you can do with CLI
+
+Prerequisites
+
+* A running server
+* python
+* Access to that server (ssh or password)
+
+Demo
+
+Now let's say you
+wanted to...
+
+Automate the whole thing
+
+Code Everything
+
+* Server
+* Initial user and access
+* OS
+* Applications
+
+You need:
+
+Packer & Terraform
+
+So you should
+come to...
+
+Using Terraform, Packer,
+& Ansible Together
+---
+DevopsOKC
+Friday, April 20
+11:30am @ StarSpace46
