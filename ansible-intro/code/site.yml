@@ -2,14 +2,11 @@
 - name: Ansible Intro
   hosts: all
   remote_user: "{{ user }}"
+  become_user: root
+  become_method: sudo
+  become: true
 
   tasks:
-    - name: Setup ufw
-      ufw: state=enabled policy=deny
-
-    - name: Allow ssh traffic
-      ufw: rule=allow port={{ ubuntu_common_ssh_port }} proto=tcp
-
     - name: Disallow password authentication
       lineinfile: dest=/etc/ssh/sshd_config
                   regexp="^PasswordAuthentication"
@@ -17,9 +14,15 @@
                   state=present
       notify: Restart ssh
 
-    handlers:
-      - name: Restart ssh
-        service: name=ssh state=restarted
+    # - name: Setup ufw
+    #   ufw: state=enabled policy=deny
+    #
+    # - name: Allow ssh traffic
+    #   ufw: rule=allow port={{ ubuntu_common_ssh_port }} proto=tcp
+
+  handlers:
+    - name: Restart ssh
+      service: name=ssh state=restarted
 
   roles:
     - nginx
