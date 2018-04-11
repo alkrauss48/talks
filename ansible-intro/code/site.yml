@@ -3,5 +3,23 @@
   hosts: all
   remote_user: "{{ user }}"
 
+  tasks:
+    - name: Setup ufw
+      ufw: state=enabled policy=deny
+
+    - name: Allow ssh traffic
+      ufw: rule=allow port={{ ubuntu_common_ssh_port }} proto=tcp
+
+    - name: Disallow password authentication
+      lineinfile: dest=/etc/ssh/sshd_config
+                  regexp="^PasswordAuthentication"
+                  line="PasswordAuthentication no"
+                  state=present
+      notify: Restart ssh
+
+    handlers:
+      - name: Restart ssh
+        service: name=ssh state=restarted
+
   roles:
     - nginx

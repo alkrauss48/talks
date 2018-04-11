@@ -1,1 +1,2 @@
 user: vagrant
+ubuntu_common_ssh_port: 22
