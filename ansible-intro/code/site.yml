@@ -1,0 +1,7 @@
+---
+- name: Ansible Intro
+  hosts: all
+  remote_user: "{{ user }}"
+
+  roles:
+    - nginx
