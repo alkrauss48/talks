@@ -1,0 +1,301 @@
+How to Give Talks
+
+By @thecodeboss
+
+@images/clevyr.png
+
+@images/clevyr-labs.png
+
+Agenda
+
+
+* Shirts?
+* Have an idea
+* Take the plunge
+* What to expect
+* How to prepare
+* The talk
+* Answering questions
+* After the talk
+* My Story
+* Shirts!
+
+* Shirts?
+
+* Have an Idea
+
+It can be anything
+
+Your topic is good enough
+
+It's all about learning
+
+* Take the Plunge
+
+Sign a check that you have to cash
+
+If you keep wondering,
+you'll never let yourself do it
+
+After you do it, you'll be nervous
+
+So, now what?
+
+* Here's What to Expect
+
+Or, not expect...
+
+No one is expecting you to be an expert
+
+"Every man I meet is my superior
+in some way, and in that I learn
+from him." - Emerson
+
+We just want to learn something,
+no matter how small
+
+It's 100% okay to
+say "I don't know"
+
+* How to Prepare
+
+Build an outline
+
+Figure out how you want to present
+
+Powerpoint, Google Docs,
+slides.com, live coding?
+
+Don't overwhelm yourself
+the first time
+
+Don't compare yourself to others
+
+Compare yourself to you, and only you
+
+Practice
+
+Practice a couple times - but don't go crazy
+
+You can practice in your head
+at lunch, without speaking
+
+Do NOT try to memorize a whole
+presentation word-for-word
+
+Everyone wants you to succeed
+
+No one is critiquing your every word,
+or trying to ask you impossible questions
+
+* The Talk
+
+The first minute is rough
+
+After the first minute,
+you feel a high
+
+Be interactive
+
+Don't sweat it; you know the material
+
+Things will happen; just roll with it
+
+Pro tip: keep an eye on the clock
+
+It's always better to end
+early than to end late
+
+* Answering Questions
+
+For every question,
+you should start off
+by thinking "I don't know"
+
+If you do know it - great!
+
+Admitting that you don't
+know an answer is always okay
+
+People respect honesty
+
+But don't BS
+
+* After the Talk
+
+You'll feel all the nervousness gone
+
+You'll feel so good
+
+It's like another high
+
+And then the best part...
+
+You'll want to sign up for the next talk
+
+People get to know you
+
+They'll follow you
+on social media
+
+Post/tweet about you
+
+Know you on the
+Techlahoma slack
+
+* My Story
+
+Talks are fun for me b/c
+I know I'm talking to my friends
+
+Do I get nervous?
+
+Absolutely - every time
+
+But I have fun
+
+2014 - First talk at OKCRB
+
+2015 - Second talk at OKCRB
+
+Several talks later...
+
+* Bonus
+
+You don't always have to give
+a talk over something you know
+
+Give a talk about
+something you don't know
+
+It forces you to learn something
+
+Ansible/Packer/Terraform
+
+* Shirts!
+
+* Summary
+
+Take the plunge.
+You don't have to be an expert.
+Everyone wants you to succeed.
+
+Thanks!
+
+Clevyr
+clevyr.com
+
+Aaron Krauss
+@thecodeboss
+thesocietea.org
+
+
+
+---Notes
+
+* Shirts?
+* Have an idea
+* Take the plunge
+* What to expect
+* How to prepare
+* The talk
+* Answering questions
+* After the talk
+* My Story
+* Shirts!
+
+
+1) Have an idea
+
+It can be anything - literally anything tech-related.
+Don't think that your idea isn't good enough - because it is. Even if it's a
+tiny topic, you can give a talk. You can share knowledge with everyone, and
+that's what it's all about.
+
+
+2) Take the plunge
+* Sign a check that you have to cash
+* If you keep wondering, you'll never let yourself do it. You just have to say
+"I'll do it," and go from there.
+* After you do it, you'll be nervous
+
+* So you're giving a talk, now what?
+
+3) Here's what to Expect
+* No one is expecting you to be an expert. No one expects you to be perfect.
+* Emerson - "Every man I meet is my superior in some way, and in that I learn
+  from him." You don't have to be all-around smarter than anyone else to teach
+  them - because you will always know at least something that they don't know.
+* We just want to learn something, no matter how small. If I can listen to you
+  and learn a single fact that I didn't know before, then that's a win for me.
+* It's 100% okay to say "I don't know." That's usually my response to questions.
+  i.e. "I think..., but I don't know." It's very difficult to answer questions
+  on the fly, and even when you do, you'll usually forget something. The best
+  thing to do is to point the person to where they can learn more.
+
+
+4) How to Prepare
+* Build an outline
+* Figure out how you want to present
+* Powerpoint, Google Docs, slides.com, live coding?
+  - Don't overwhelm yourself the first time. Pick something comfortable.
+  - I know there's a desire to "impress" everyone - and looking at your favorite
+    speakers give conf talks makes you think that even more - but don't compare
+    yourself to them. Compare yourself to you, and only you.
+* Practice.
+  - Practice a couple times - but don't go crazy.
+  - You can practice in your head at lunch - that's no biggie.
+* Do NOT try to memorize a whole presentation word-for-word, or you will lose
+  and won't have fun. Just remember the talking points.
+
+
+Everyone wants you to succeed. No one is critiquing your every word, or trying
+to ask you impossible questions. We all want you to do well, and we want to help
+you. We're all on the same page.
+
+5) The Talk
+* The first minute is rough. You're warming up, doing your intro, and getting in
+  the groove.
+* After the first minute, you feel a high - and that's when you just rock and
+  roll.
+* Pro tip: keep an eye on the clock. It's always better to end early than to end
+  late.
+
+
+6) Answering Questions
+* For every question, you should start off by thinking "I don't know". If you
+  happen to know it off the top of your head, then you can answer. But it's
+  always okay to say I don't know.
+* Admitting that you don't know an answer is always okay. People will respect
+  your honesty. They won't appreciate you BSing an answer - so try not to do
+  that.
+
+
+7) After the Talk
+* you'll feel all the nervousness gone, and you'll feel so good.
+* It's like a high.
+* And then you'll want to sign up for the next talk
+* People get to know you. They'll follow you on twitter, say hi to you more
+  often at the user group meetups, and probably slack you saying you did a great
+  job.
+
+
+8) My Talk Path
+
+* Talks are fun for me because I know that I'm talking to my friends, and not to
+  people who will judge me. Do I get nervous? Absolutely - but it's fun. I have
+  the opportunity to share something that I thought was cool with you all - and
+  hopefully teach you something
+
+
+Bonus:
+* Give a talk about something that you don't know very well. This is what I try to
+  do these days - because it teaches me.
+* Talk about ansible/packer/terraform talk
+
+Summary:
+* Take the plunge
+* You don't have to be an expert
+* Everyone wants you to succeed
+
+9) Shirts!

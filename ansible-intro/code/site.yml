@@ -14,11 +14,11 @@
                   state=present
       notify: Restart ssh
 
-    # - name: Setup ufw
-    #   ufw: state=enabled policy=deny
-    #
-    # - name: Allow ssh traffic
-    #   ufw: rule=allow port={{ ubuntu_common_ssh_port }} proto=tcp
+    - name: Setup ufw
+      ufw: state=enabled policy=deny
+
+    - name: Allow ssh traffic
+      ufw: rule=allow port={{ ubuntu_common_ssh_port }} proto=tcp
 
   handlers:
     - name: Restart ssh
