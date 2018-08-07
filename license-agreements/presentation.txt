@@ -1,0 +1,118 @@
+Open Source
+License Agreements
+
+By @thecodeboss
+
+@images/clevyr.png
+
+@images/clevyr-labs.png
+
+Open Source Licenses
+make it easier to
+contribute
+
+4 Main Concerns
+
+* Modify
+* Distribution
+* Who has access
+* Price
+
+Common Open
+Source Licenses
+
+MIT
+BSD
+Apache
+
+MIT
+
+"It's free, use it
+however you want,
+just don't sue me"
+
+Shortest & Broadest
+
+You can actually sell
+a product with MIT license
+
+Only Requirement:
+Can't take away the
+license in your project
+
+BSD
+
+BSD 2 vs BSD 3
+
+BSD 2 is very
+similar to MIT
+
+But, can't sell the original work
+
+BSD 3 includes
+non-endorsement clause
+
+Means you can't use the original
+contributors to endorse your derived
+product
+
+Apache
+
+"Like MIT, but more accessible. And free."
+
+* Project is free
+* Anyone can use it
+* Rights will always remain
+
+Hardcore Open
+Source Licenses
+
+GPL
+
+GPL
+General Public License
+
+The project must be free
+
+You can:
+* Copy
+* Distribute
+* Modify
+
+The Caveat
+
+It's Copylefted
+
+"It's free. And your project will be too."
+
+Bonus: LGPL
+
+Not Open Source,
+But Stil Free
+
+Creative Commons
+
+4 Parts
+
+Can be used individually
+or as a combination
+
+Attribution
+Share Alike (i.e. Copylefted)
+Non-Commercial
+No Deritive Works
+
+Top 3 Licenses
+
+MIT - 25%
+GPL - 19%
+Apache - 15%
+
+Thanks!
+
+clevyr.com
+clevyrlabs.com
+
+Aaron Krauss
+@thecodeboss
+thesocietea.org
