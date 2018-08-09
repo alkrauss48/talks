@@ -32,16 +32,16 @@ class Animal
 
 end
 
-animal = Animal.new('dog', 'sick')
-
-animal.sound = 'woof'
-animal.make_noise!
-
-puts Animal.status
-puts animal.status
+# animal = Animal.new('fox', 'sick')
+#
+# animal.sound = 'he ha he ha he'
+# animal.make_noise!
+#
+# puts Animal.status
+# puts animal.status
 
 
 # Fails:
 # animal.status = 'sick'
-animal.is_healthy?
+# animal.is_healthy?
 # Animal.count
