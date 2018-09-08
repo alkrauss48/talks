@@ -1,0 +1,83 @@
+Building a
+Neural Network
+In Python
+
+By @thecodeboss
+
+@images/clevyr.png
+
+@images/clevyr-labs.png
+
+Neural Networks
+
+Key Takeaway:
+
+Neural Networks != All of Machine Learning
+
+They are popular right now
+
+Dare I say, a buzz phrase
+
+Not a silver bullet
+
+That said, let's
+learn about them
+
+Machine Learning
+
+Supervised vs.
+Unsupervised Learning
+
+Supervised
+Learning
+
+@images/supervised-learning.png
+
+Common Problem Types:
+* Classification
+* Regression
+
+Unsupervised
+Learning
+
+@images/unsupervised-learning.png
+
+Common Problem Types:
+* Classification
+* Dimensionality Reduction
+
+Discrete vs Continuous
+
+Discrete
+
+Continuous
+
+@images/learning-types.png
+
+Cost Function
+(and Gradient Descent)
+
+@images/cost-function.png
+
+Neural Networks
+
+@images/neural-network.png
+
+Demo
+
+Thanks!
+
+Follow Up Talk
+By Dustin Reagan
+Next Meetup
+
+
+
+clevyr.com
+clevyrlabs.com
+
+Aaron Krauss
+@thecodeboss
+thesocietea.org
+
+Questions?
