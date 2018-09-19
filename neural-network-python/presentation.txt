@@ -8,11 +8,24 @@ By @thecodeboss
 
 @images/clevyr-labs.png
 
+We're Hiring!
+
+clevyr.shop
+
+@images/clevyr-store.png
+
+@images/techlahoma.png
+
 Neural Networks
+
+Called as such because
+they mimic how the brain works
 
 Key Takeaway:
 
 Neural Networks != All of Machine Learning
+
+They are a great tool
 
 They are popular right now
 
@@ -24,6 +37,10 @@ That said, let's
 learn about them
 
 Machine Learning
+
+Hot Dog Test
+
+@images/hot-dog-test.png
 
 Supervised vs.
 Unsupervised Learning
@@ -43,14 +60,8 @@ Learning
 @images/unsupervised-learning.png
 
 Common Problem Types:
-* Classification
+* Clustering
 * Dimensionality Reduction
-
-Discrete vs Continuous
-
-Discrete
-
-Continuous
 
 @images/learning-types.png
 
@@ -61,17 +72,42 @@ Cost Function
 
 Neural Networks
 
-@images/neural-network.png
+@images/think.png
+
+@images/neural-network-3.png
+
+@images/backpropogation.png
+
+@images/neural-network-2.png
+
+Example
+
+@images/demo-3.png
+
+@images/example-3.png
+
+@images/train-3.png
 
 Demo
+
+@images/table.png
+
+@images/matrices.png
+
+@images/cost-function-equation.png
+
+@images/sigmoid.png
+
+Where to Learn More
+
+Machine Learning
+on Coursera
 
 Thanks!
 
 Follow Up Talk
 By Dustin Reagan
 Next Meetup
-
-
 
 clevyr.com
 clevyrlabs.com

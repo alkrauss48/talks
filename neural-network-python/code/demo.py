@@ -5,7 +5,7 @@ class NeuralNetwork():
     def __init__(self):
         # Seed the random number generator, so it generates the same numbers
         # every time the program runs.
-        random.seed(1)
+        random.seed(100)
 
         # We model a single neuron, with 3 input connections and 1 output connection.
         # We assign random weights to a 3 x 1 matrix, with values in the range -1 to 1
