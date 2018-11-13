@@ -1,0 +1,31 @@
+Documenting
+and Refactoring
+Python Code
+
+By @thecodeboss
+
+@images/clevyr.png
+
+@images/clevyr-labs.png
+
+Refactoring
+
+* Use variables
+* Use whitespace
+* Shorter lines
+* Keep things readable
+
+Documenting
+
+* Self-Documenting Code
+* Docstrings
+* Comments
+
+Thanks!
+
+clevyr.com
+clevyrlabs.com
+
+Aaron Krauss
+@thecodeboss
+thesocietea.org
