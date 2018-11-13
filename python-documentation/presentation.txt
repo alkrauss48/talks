@@ -8,7 +8,16 @@ By @thecodeboss
 
 @images/clevyr-labs.png
 
+Year of Documentation
+
+What We'll Cover
+
+* Refactoring
+* Documenting
+
 Refactoring
+
+Demo
 
 * Use variables
 * Use whitespace
@@ -16,6 +25,8 @@ Refactoring
 * Keep things readable
 
 Documenting
+
+Demo
 
 * Self-Documenting Code
 * Docstrings

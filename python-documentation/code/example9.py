@@ -11,14 +11,14 @@ def generate_total_price(amounts):
     """
     tax_rate = 1.08
 
-    # Only sum the values that are numbers, and positive
+    # Only sum the values that are numbers, and positive.
     subtotal = sum(
         [amt for amt in amounts
          if isinstance(amt, (float, int)) and amt > 0
         ]
     )
 
-    # Build grand total
+    # Build grand total.
     grand_total = subtotal * tax_rate
     return grand_total
 
