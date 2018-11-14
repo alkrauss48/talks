@@ -28,6 +28,9 @@ Demo
 * Shorter lines
 * Keep things readable
 
+Refactoring doesn't always
+lead to shorter code
+
 Documenting
 
 Demo
