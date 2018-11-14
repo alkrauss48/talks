@@ -8,6 +8,10 @@ By @thecodeboss
 
 @images/clevyr-labs.png
 
+@images/techlahoma.png
+
+techlahoma.org/donate
+
 Year of Documentation
 
 What We'll Cover
