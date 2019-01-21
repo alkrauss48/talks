@@ -1,6 +1,5 @@
 food_type(____, cheese).
-food_type(____, cracker).
-food_type(____, meat).
+food_type(____, cheese).
 food_type(____, meat).
 food_type(____, soda).
 food_type(____, dessert).
