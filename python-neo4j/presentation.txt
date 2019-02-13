@@ -11,17 +11,29 @@ By:
 
 https://code.org/volunteer
 
+Preface
+Am I a graph database expert?
+
+No
+
 What is Neo4j?
-# Prolog was created in 1972 by Alain Colmerauer, and it's a logic programming
-# language - a set of sentences expressing facts and rules.
 
 What is Neo4j?
 
 @images/neo4j.png
 
+* Open-source
+* NoSQL
+* Available since 2007
+* ACID Compliant
+* Cluster support
+* Runtime failover
+
 What are Graphing Databases?
 
 @images/movies.png
+
+Neo4j
 
 3 things
 
@@ -29,10 +41,14 @@ Nodes
 Relationships
 Properties
 
+@images/graph-example.png
+
 Relational vs Graphing
 
 Key Argument:
 Joins are expensive and confusing
+
+Neo4j has constant time traversals
 
 @images/work-relational.png
 
