@@ -21,15 +21,17 @@ used for web dev
 
 @images/not-amused.png
 
-PROLOG - PROgramming in LOGic
-
-@images/mind-blown.png
+So what are we doing here?
 
 Logical Programming
 
 A set of sentences in logical form,
 expressing facts and rules about some
 problem domain.
+
+PROLOG - PROgramming in LOGic
+
+@images/mind-blown.png
 
 But it's also a
 Declarative Language
@@ -97,6 +99,9 @@ the wrong situation
 thanks
 * @thecodeboss
 * thesocietea.org
+
+clevyr
+clevyr.com
 
 https://thesocietea.org/blog
 

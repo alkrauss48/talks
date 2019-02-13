@@ -1,5 +1,6 @@
-father(____, ____).
-father(____, ____).
+father(john, paul).
+father(paul, test).
+father(test, foo).
 
 ancestor(X, Y) :-
     father(X, Y).

@@ -1,8 +1,8 @@
-food_type(____, cheese).
-food_type(____, cheese).
-food_type(____, meat).
-food_type(____, soda).
-food_type(____, dessert).
+food_type(gouda, cheese).
+food_type(provolone, cheese).
+food_type(ham, meat).
+food_type(pepsi, soda).
+food_type(cheesecake, dessert).
 
 flavor(sweet, dessert).
 flavor(savory, meat).
