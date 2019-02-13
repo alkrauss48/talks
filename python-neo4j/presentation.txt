@@ -1,0 +1,62 @@
+Python + Neo4j
+
+By:
+     Aaron Krauss
+
+\@thecodeboss
+
+@images/clevyr.png
+
+@images/code-org.png
+
+https://code.org/volunteer
+
+What is Neo4j?
+# Prolog was created in 1972 by Alain Colmerauer, and it's a logic programming
+# language - a set of sentences expressing facts and rules.
+
+What is Neo4j?
+
+@images/neo4j.png
+
+What are Graphing Databases?
+
+@images/movies.png
+
+3 things
+
+Nodes
+Relationships
+Properties
+
+Relational vs Graphing
+
+Key Argument:
+Joins are expensive and confusing
+
+@images/work-relational.png
+
+@images/work-graph.png
+
+SQL vs Cypher
+
+Example:
+Get the name of everyone
+in the IT Department
+
+@images/sql.png
+
+@images/cypher.png
+
+Demo
+
+thanks
+* @thecodeboss
+* thesocietea.org
+
+clevyr
+clevyr.com
+
+https://thesocietea.org/blog
+
+questions?
