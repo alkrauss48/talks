@@ -1,0 +1,146 @@
+How Blocks Work
+in Ruby
+
+By:
+     Aaron Krauss
+
+\@thecodeboss
+
+@images/clevyr.png
+
+@images/techlahoma.png
+
+@images/code-org.png
+
+https://code.org/volunteer
+
+Now we can get
+to the real talk...
+
+My Honeymoon
+to Japan
+
+<insert images>
+
+Back to reality...
+
+What are Blocks?
+
+Blocks are just a type of closure
+
+Like a function
+
+But, they are core to
+how you use Ruby
+
+They are a part of
+the syntax itself
+
+You use them in:
+* passable functions
+* callbacks
+* loops
+* custom DSLs
+
+Important Note
+
+Almost everything in Ruby
+is an object.
+Blocks are not.
+
+Demo
+
+Rules:
+* Blocks can have any number of parameters
+* A function can only have one block
+
+Why?
+
+Why do blocks exist?
+
+My philosphy
+
+When a function accepts a closure (i.e. another function) as a paramter, you usually only need one
+closure.
+
+So, Ruby decided to take that concept and make it
+very intuitive for new developers
+
+New Ruby Devs: Yay!
+
+I.e. if you're coming from C++, Java, C# etc. and you're not used to passing
+functions around - then blocks may seem pretty cool and easy to grasp.
+
+JavaScript Devs: But what about async behavior?
+(such as success and error handlers)
+
+Ruby doesn't do async by default,
+so that's not really a concern
+
+begin
+  do_the_thing
+rescue StandardError => error
+  puts error.message
+end
+
+Functional Devs: WTF?
+
+What about functional programming?
+
+You got me
+
+You can use Procs and Lambdas, but...
+
+Ruby isn't a functional dev's best friend
+
+(check out elixir for that!)
+
+Moar Demos
+
+What is a Proc?
+
+A Proc is an object-version of a block
+
+It responds to the #call method
+instead of yield
+
+How about some of those demos?
+
+Procs vs Lambdas
+
+Lambdas inherit from Proc,
+but have 2 main differences
+
+Lambdas throw an ArgumentError if argument
+number doesn't match. Procs do not.
+
+Lambdas return in a local scope, whereas
+Procs return from the scope in which
+they were called
+
+The reason?
+
+Procs behave more like methods.
+Lambdas behave like functions.
+
+DEMO TIME
+
+If you need to use a Proc or Lambda,
+I recommend a Lambda
+
+They behave more like you expect
+
+That brings this talk to...
+
+A closure
+
+thanks
+* @thecodeboss
+* thesocietea.org
+
+clevyr
+clevyr.com
+
+https://thesocietea.org/blog
+
+questions?
