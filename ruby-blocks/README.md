@@ -1,10 +1,15 @@
-Python + Neo4j Demo
+How Blocks Work in Ruby
 ==
+Also includes Procs and Lambdas.
+
 By [Aaron Krauss](https://thesocietea.org)
 
 ## Running the Code
 
-View the README in the `code/` directory.
+```
+cd code
+ruby example1.rb # And so on...
+```
 
 ## Running the Presentation
 

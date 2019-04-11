@@ -1,7 +1,7 @@
-def lambda_example
-  l = lambda {|x,y| return x * y }
-  result = l.call(2, 4) * 10
+def proc_example
+  p = proc {|x,y| return x*y }
+  result = p.call(2, 4) * 10
   return result
 end
 
-puts lambda_example
+puts proc_example

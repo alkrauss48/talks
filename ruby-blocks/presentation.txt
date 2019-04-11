@@ -20,7 +20,19 @@ to the real talk...
 My Honeymoon
 to Japan
 
-<insert images>
+@images/japan-7.png
+
+@images/japan-6.png
+
+@images/japan-5.png
+
+@images/japan-4.png
+
+@images/japan-3.png
+
+@images/japan-2.png
+
+@images/japan-1.png
 
 Back to reality...
 
@@ -28,16 +40,18 @@ What are Blocks?
 
 Blocks are just a type of closure
 
-Like a function
+Similar to a function
 
-But, they are core to
+But they have some key differences
+
+They are core to
 how you use Ruby
 
 They are a part of
 the syntax itself
 
-You use them in:
-* passable functions
+You use them as:
+* function parameters
 * callbacks
 * loops
 * custom DSLs
@@ -52,7 +66,13 @@ Demo
 
 Rules:
 * Blocks can have any number of parameters
-* A function can only have one block
+* A function can only accept one block
+* Blocks can be nested
+
+And one general rule
+we haven't learned yet:
+
+* Don't return from a block
 
 Why?
 
@@ -60,16 +80,19 @@ Why do blocks exist?
 
 My philosphy
 
-When a function accepts a closure (i.e. another function) as a paramter, you usually only need one
-closure.
+When a function accepts a closure
+(i.e. another function) as a paramater,
+you usually only need one closure.
 
-So, Ruby decided to take that concept and make it
-very intuitive for new developers
+So, Ruby decided to take that
+concept and make it very
+intuitive for new developers
 
 New Ruby Devs: Yay!
 
-I.e. if you're coming from C++, Java, C# etc. and you're not used to passing
-functions around - then blocks may seem pretty cool and easy to grasp.
+I.e. if you're coming from C++, Java, C# etc.
+and you're not used to passing functions around -
+then blocks may seem pretty cool and easy to grasp.
 
 JavaScript Devs: But what about async behavior?
 (such as success and error handlers)
@@ -120,8 +143,8 @@ they were called
 
 The reason?
 
-Procs behave more like methods.
-Lambdas behave like functions.
+Procs behave more like blocks.
+Lambdas behave like methods/functions.
 
 DEMO TIME
 
