@@ -1,0 +1,155 @@
+Accessibility for the Web
+
+(From a developer's perspective)
+
+By:
+     Aaron Krauss
+
+\@thecodeboss
+
+@images/clevyr.png
+
+@images/techlahoma.png
+
+@images/code-org.png
+
+https://code.org/volunteer
+
+Developer Code of Ethics
+
+1) Even if you don't have to - or even want to - you always
+must deviate from the original design.
+
+2) At least once, say "we can't do that", or even better, "I'm not going to do
+that."
+
+3) Get the project 80% close to the original design. After that, just say
+everything will take too much time - even if it won't.
+
+4) Never admit that you don't know something - just say it's impossible,
+even if there are plenty of websites that already do it.
+
+Developer Code of Ethics
+
+What is Accessibility?
+
+Accessibility is giving a f*ck about people
+
+All people
+
+That includes users with disabilities
+
+And also users with no disabilities at all
+
+Main Concept
+
+Building an accessible web site makes your website better overall
+
+* More usage (and thus popularity)
+* Better SEO
+* Better design architecture
+* Better code architecture
+
+And all of that usually means more $$$
+
+Some housekeeping...
+
+Don't say "disabled users"
+
+Say "users with disabilities"
+
+Types of Disabilities
+
+* Visual
+* Auditory
+* Motor
+* Cognitive
+
+Visual Concerns
+
+* Screen readers
+* "Focus" indicators
+* Color-blindness
+* Contrast
+* Z-scan
+
+Screen readers
+
+ChromeVox Chrome
+
+Tips for maximizing screen reader usage:
+
+* Image alt tags
+
+* Title tags for non-image icons
+
+* ARIA roles
+
+You can help by:
+* Telling the developer what an image's alt text should be
+* Ensuring the developer knows how everything interacts
+
+Demo
+
+Focus Indicators
+
+Demo
+
+Color-blindness
+
+NoCoffee Chrome Plugin
+
+Contrast
+
+https://webaim.org/resources/contrastchecker/
+
+Z-scan
+
+Users don’t read web pages,
+they scan.
+
+First, people scan from the top left to the top right, forming a horizontal line
+
+Next, down and to the left side of the page, creating a diagonal line
+
+Last, back across to the right again, forming a second horizontal line
+
+Auditory Concerns
+
+* Subtitles
+* Visual cues
+
+Motor Concerns
+
+* Responsive Applications
+* Skip menus
+* Tab flow
+* "Submit" actions
+* "Cancel" actions
+
+Cognitive Concerns
+
+* Good content
+* "Panic" mode
+
+"Panic" mode
+
+Think websites like:
+* Hospitals
+* Schools
+* Local News / Weather
+
+References
+
+* https://uxplanet.org/z-shaped-pattern-for-reading-web-content-ce1135f92f1c
+
+thanks
+* @thecodeboss
+* thecodeboss.dev
+
+clevyr
+clevyr.com
+
+https://thesocietea.org/blog
+
+questions?

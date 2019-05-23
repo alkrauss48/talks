@@ -65,7 +65,8 @@ Blocks are not.
 Demo
 
 Rules:
-* Blocks can have any number of parameters
+* Blocks can have any number of arguments
+* Blocks don't check arguments
 * A function can only accept one block
 * Blocks can be nested
 

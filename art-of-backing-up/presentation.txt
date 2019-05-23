@@ -2,9 +2,9 @@ Zen and the Art
 of the IT Backup
 
 By
-@thecodeboss
-@tallmatcha
-@caseymcneil
+Aaron
+Dustin
+Jesse
 
 @images/clevyr.png
 

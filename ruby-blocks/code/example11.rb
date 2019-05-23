@@ -4,11 +4,11 @@ def foo(my_proc)
 end
 
 def bar(my_proc)
-  my_proc.call
+  my_proc.call(3)
 end
 
-cool_proc = Proc.new do
-  puts 'Now we\'re in the block!'
+cool_proc = Proc.new do |x|
+  puts 'Now we\'re in the proc!'
 end
 
 foo(cool_proc)
