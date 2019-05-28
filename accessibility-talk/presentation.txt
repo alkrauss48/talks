@@ -43,7 +43,8 @@ And also users with no disabilities at all
 
 Main Concept
 
-Building an accessible web site makes your website better overall
+Building an accessible web site
+makes your website better overall
 
 * More usage (and thus popularity)
 * Better SEO
@@ -51,6 +52,10 @@ Building an accessible web site makes your website better overall
 * Better code architecture
 
 And all of that usually means more $$$
+
+It also may be required
+
+Section 508
 
 Some housekeeping...
 
@@ -72,12 +77,23 @@ Visual Concerns
 * Color-blindness
 * Contrast
 * Z-scan
+* Open Graph
 
 Screen readers
 
 ChromeVox Chrome
 
+Accessibility tree
+
+@images/accessibility-tree.png
+
+Accessibility tree vs DOM tree
+
 Tips for maximizing screen reader usage:
+
+* Use Semantic HTML
+  * Such as <section>,<article>,
+    <aside>,<nav>, etc.
 
 * Image alt tags
 
@@ -89,11 +105,7 @@ You can help by:
 * Telling the developer what an image's alt text should be
 * Ensuring the developer knows how everything interacts
 
-Demo
-
 Focus Indicators
-
-Demo
 
 Color-blindness
 
@@ -101,9 +113,9 @@ NoCoffee Chrome Plugin
 
 Contrast
 
-https://webaim.org/resources/contrastchecker/
-
 Z-scan
+
+Open Graph
 
 Users don’t read web pages,
 they scan.
@@ -116,8 +128,15 @@ Last, back across to the right again, forming a second horizontal line
 
 Auditory Concerns
 
+For Media:
+
 * Subtitles
+* Volume controls
+* Ideally default to a "muted" state
+
+For supplemental audio:
 * Visual cues
+* Nothing absurd (i.e. loud, lengthy, confusing)
 
 Motor Concerns
 
@@ -127,10 +146,32 @@ Motor Concerns
 * "Submit" actions
 * "Cancel" actions
 
+Responsive Applications
+
+Skip menus
+
+Tab flow
+
+"Submit" actions
+
+"Cancel" actions
+
 Cognitive Concerns
 
 * Good content
+* Well-thought-out workflows
 * "Panic" mode
+
+Good Content
+
+* Labels
+* Titles / Headings
+* Call to Actions
+
+Well thought-out workflows
+
+* Analyze multiple users' perspectives
+* Build wireframes (and give them to the dev)
 
 "Panic" mode
 
@@ -139,9 +180,19 @@ Think websites like:
 * Schools
 * Local News / Weather
 
+Make a few things incredibly simple
+
 References
 
-* https://uxplanet.org/z-shaped-pattern-for-reading-web-content-ce1135f92f1c
+* Section 508: https://www.epa.gov/accessibility/what-section-508
+* ChromeVox Plugin: https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn?hl=en
+* Z-Scan: https://uxplanet.org/z-shaped-pattern-for-reading-web-content-ce1135f92f1c
+* Skip Menu Code: https://gist.github.com/alkrauss48/dc8e010a59d5e2df1666
+* ARIA Roles and Attributes: https://thecodeboss.dev/2016/09/aria-roles-and-attributes-how-to-actually-use-them/
+* Developing for Accessibility: https://thecodeboss.dev/2014/07/developing-for-accessibility/
+* NoCoffee Chrome Plugin: https://chrome.google.com/webstore/detail/nocoffee/jjeeggmbnhckmgdhmgdckeigabjfbddl?hl=en-US
+* Contrast Test: https://webaim.org/resources/contrastchecker/
+* Meta Tags: https://thecodeboss.dev/2016/12/what-meta-tags-your-site-should-be-using/
 
 thanks
 * @thecodeboss
