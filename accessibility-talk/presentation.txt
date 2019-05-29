@@ -15,6 +15,13 @@ By:
 
 https://code.org/volunteer
 
+Disclaimer
+
+Some of this talk will be
+more dev than you care about
+
+Deal with it
+
 Developer Code of Ethics
 
 1) Even if you don't have to - or even want to - you always
@@ -33,6 +40,8 @@ Developer Code of Ethics
 
 What is Accessibility?
 
+a11y
+
 Accessibility is giving a f*ck about people
 
 All people
@@ -46,14 +55,17 @@ Main Concept
 Building an accessible web site
 makes your website better overall
 
-* More usage (and thus popularity)
-* Better SEO
 * Better design architecture
 * Better code architecture
+* Better SEO
+* More usage (and thus popularity)
 
 And all of that usually means more $$$
 
-It also may be required
+@images/make-money.png
+
+Developing an accessibile site
+may also be required
 
 Section 508
 
@@ -63,12 +75,25 @@ Don't say "disabled users"
 
 Say "users with disabilities"
 
+Myth Busing Time
+
+Myth #1
+
+Accessibility = handling blind users
+
+Myth #2
+
+Accessibility = people use screen readers,
+so add image alt text
+
 Types of Disabilities
 
 * Visual
 * Auditory
 * Motor
 * Cognitive
+
+Followed by a bonus disability
 
 Visual Concerns
 
@@ -99,7 +124,10 @@ Tips for maximizing screen reader usage:
 
 * Title tags for non-image icons
 
-* ARIA roles
+* ARIA properties
+
+Accessible Rich
+Internet Applications
 
 You can help by:
 * Telling the developer what an image's alt text should be
@@ -182,17 +210,50 @@ Think websites like:
 
 Make a few things incredibly simple
 
+Bonus Disability
+
+Drum Roll...
+
+"Data" Disability
+
+Not all users have a ton of data,
+let alone fast connections
+
+So what can you do?
+
+* Optimize your images
+
+@images/super-mario.png
+
+* 150-200 KB is usually my limit.
+Ideally less than that.
+
+* Minify your CSS and JS
+
+* Don't overdo it on custom fonts
+
+* Set caching HTTP headers
+
+Want to learn more?
+
+1) Watch this talk like 2 more
+times when it gets up on YouTube
+
+2) Then follow the references
+
+3) Then google things
+
 References
 
 * Section 508: https://www.epa.gov/accessibility/what-section-508
 * ChromeVox Plugin: https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn?hl=en
-* Z-Scan: https://uxplanet.org/z-shaped-pattern-for-reading-web-content-ce1135f92f1c
-* Skip Menu Code: https://gist.github.com/alkrauss48/dc8e010a59d5e2df1666
-* ARIA Roles and Attributes: https://thecodeboss.dev/2016/09/aria-roles-and-attributes-how-to-actually-use-them/
 * Developing for Accessibility: https://thecodeboss.dev/2014/07/developing-for-accessibility/
+* ARIA Roles and Attributes: https://thecodeboss.dev/2016/09/aria-roles-and-attributes-how-to-actually-use-them/
 * NoCoffee Chrome Plugin: https://chrome.google.com/webstore/detail/nocoffee/jjeeggmbnhckmgdhmgdckeigabjfbddl?hl=en-US
 * Contrast Test: https://webaim.org/resources/contrastchecker/
+* Z-Scan: https://uxplanet.org/z-shaped-pattern-for-reading-web-content-ce1135f92f1c
 * Meta Tags: https://thecodeboss.dev/2016/12/what-meta-tags-your-site-should-be-using/
+* Skip Menu Code: https://gist.github.com/alkrauss48/dc8e010a59d5e2df1666
 
 thanks
 * @thecodeboss
@@ -200,7 +261,5 @@ thanks
 
 clevyr
 clevyr.com
-
-https://thesocietea.org/blog
 
 questions?
