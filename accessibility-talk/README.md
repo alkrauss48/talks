@@ -1,15 +1,7 @@
-How Blocks Work in Ruby
+Accessibility for the Web
 ==
-Also includes Procs and Lambdas.
 
-By [Aaron Krauss](https://thesocietea.org)
-
-## Running the Code
-
-```
-cd code
-ruby example1.rb # And so on...
-```
+By [Aaron Krauss](https://thecodeboss.dev)
 
 ## Running the Presentation
 
