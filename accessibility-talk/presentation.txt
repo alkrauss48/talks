@@ -23,20 +23,25 @@ more dev than you care about
 Deal with it
 
 Developer Code of Ethics
+When working with a Designer
 
-1) Even if you don't have to - or even want to - you always
-must deviate from the original design.
+1) Even if you don't have to - or
+even want to - you always must
+deviate from the original design.
 
-2) At least once, say "we can't do that", or even better, "I'm not going to do
-that."
+2) At least once, say "we can't do that",
+or even better, "I'm not going to do that."
 
-3) Get the project 80% close to the original design. After that, just say
-everything will take too much time - even if it won't.
+3) Get the project 90% close to the original
+design. After that, just say everything will
+take too much time - even if it won't.
 
-4) Never admit that you don't know something - just say it's impossible,
-even if there are plenty of websites that already do it.
+4) Never admit that you don't know something
+- just say it's impossible, even if there
+are plenty of websites that already do it.
 
 Developer Code of Ethics
+When working with a Designer
 
 What is Accessibility?
 
@@ -57,6 +62,7 @@ makes your website better overall
 
 * Better design architecture
 * Better code architecture
+* More quality content
 * Better SEO
 * More usage (and thus popularity)
 
@@ -81,10 +87,22 @@ Myth #1
 
 Accessibility = handling blind users
 
+Wrong
+
+Accessibility = handling everyone
+
 Myth #2
 
 Accessibility = people use screen readers,
 so add image alt text
+
+Wrong
+
+Accessibility = a ton of stuff
+
+But it's okay...
+
+@images/we-can-do-this.png
 
 Types of Disabilities
 
@@ -98,7 +116,6 @@ Followed by a bonus disability
 Visual Concerns
 
 * Screen readers
-* "Focus" indicators
 * Color-blindness
 * Contrast
 * Z-scan
@@ -106,7 +123,7 @@ Visual Concerns
 
 Screen readers
 
-ChromeVox Chrome
+ChromeVox
 
 Accessibility tree
 
@@ -133,26 +150,22 @@ You can help by:
 * Telling the developer what an image's alt text should be
 * Ensuring the developer knows how everything interacts
 
-Focus Indicators
-
 Color-blindness
 
 NoCoffee Chrome Plugin
 
 Contrast
 
-Z-scan
+@images/contrast.png
 
-Open Graph
+Z-scan
 
 Users don’t read web pages,
 they scan.
 
-First, people scan from the top left to the top right, forming a horizontal line
+@images/z-scan.png
 
-Next, down and to the left side of the page, creating a diagonal line
-
-Last, back across to the right again, forming a second horizontal line
+Open Graph
 
 Auditory Concerns
 
@@ -163,6 +176,7 @@ For Media:
 * Ideally default to a "muted" state
 
 For supplemental audio:
+
 * Visual cues
 * Nothing absurd (i.e. loud, lengthy, confusing)
 
@@ -171,18 +185,31 @@ Motor Concerns
 * Responsive Applications
 * Skip menus
 * Tab flow
+* Focus indicators
 * "Submit" actions
 * "Cancel" actions
 
 Responsive Applications
 
+@images/responsive.png
+
 Skip menus
 
 Tab flow
 
+Focus indicators
+
 "Submit" actions
 
+e.g. the Enter or Spacebar key
+
+@images/modal.png
+
 "Cancel" actions
+
+e.g. the ESC key
+
+@images/modal.png
 
 Cognitive Concerns
 
@@ -219,6 +246,8 @@ Drum Roll...
 Not all users have a ton of data,
 let alone fast connections
 
+Especially in other countries
+
 So what can you do?
 
 * Optimize your images
@@ -250,16 +279,18 @@ References
 * Developing for Accessibility: https://thecodeboss.dev/2014/07/developing-for-accessibility/
 * ARIA Roles and Attributes: https://thecodeboss.dev/2016/09/aria-roles-and-attributes-how-to-actually-use-them/
 * NoCoffee Chrome Plugin: https://chrome.google.com/webstore/detail/nocoffee/jjeeggmbnhckmgdhmgdckeigabjfbddl?hl=en-US
+* Open Graph: https://thecodeboss.dev/2016/12/what-meta-tags-your-site-should-be-using/
 * Contrast Test: https://webaim.org/resources/contrastchecker/
 * Z-Scan: https://uxplanet.org/z-shaped-pattern-for-reading-web-content-ce1135f92f1c
 * Meta Tags: https://thecodeboss.dev/2016/12/what-meta-tags-your-site-should-be-using/
 * Skip Menu Code: https://gist.github.com/alkrauss48/dc8e010a59d5e2df1666
 
 thanks
-* @thecodeboss
-* thecodeboss.dev
 
 clevyr
 clevyr.com
+
+* @thecodeboss
+* thecodeboss.dev
 
 questions?
