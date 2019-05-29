@@ -285,6 +285,12 @@ References
 * Meta Tags: https://thecodeboss.dev/2016/12/what-meta-tags-your-site-should-be-using/
 * Skip Menu Code: https://gist.github.com/alkrauss48/dc8e010a59d5e2df1666
 
+* Entire Presentation:
+https://github.com/alkrauss48/talks/tree/master/accessibility-talk
+
+* Presentation Stream:
+https://www.twitch.tv/videos/431613589
+
 thanks
 
 clevyr
