@@ -1,0 +1,14 @@
+{
+  "name": "javascript-and-apis",
+  "version": "1.0.0",
+  "description": "In this talk, I review what it’s like to be a developer, my day-to-day, when you would use different languages, some basics that all programming languages have (variables, looping, functions, etc.), important aspects of coding in a team environment, and then segue into an overview about some the more common strategies of programming: object-oriented, procedural, and functional.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  }
+}

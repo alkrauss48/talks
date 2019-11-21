@@ -1,0 +1,131 @@
+Javascript + APIs
+
+By @thecodeboss
+
+@images/clevyr.png
+
+@images/clevyr-fox.png
+
+Day to Day
+JavaScript Basics
+Advanced JavaScript
+APIs
+
+My Day to Day
+
+Check email and slack
+
+Code
+
+Ping Pong
+
+Code
+
+Occasional meetings
+
+Go Home
+
+Now when I say code...
+
+I mean a lot of Googling
+
+Different Ways to Use JavaScript
+
+Software
+Web
+Mobile
+Game
+
+JavaScript Basics
+
+Things that all languages have
+
+Data Types
+Variables
+Functions
+Loops
+
+Demo
+
+More Advanced JavaScript
+
+Object-Oriented JS
+
+Demo
+
+Different Ways to Use JavaScript
+
+Software
+Web
+Mobile
+Game
+
+Software Applications: Electron
+
+Mobile Applications
+
+* React Native
+* Ionic
+
+Games
+
+* Phaser
+* Babylon
+
+APIs
+
+Application
+Programming
+Interface
+
+APIs are used to integrate with
+other services.
+
+E.g. writing an application to
+load all of your tweets.
+
+Most APIs use HTTP
+
+With HTTP, you can typically do 4 things
+
+* Create
+* Read
+* Update
+* Delete
+
+These map to actual HTTP "verbs"
+
+* Create = POST
+* Read = GET
+* Update = PUT / PATCH
+* Delete = DELETE
+
+Most APIs will respond with some
+form of common data format
+
+Usually:
+* JSON
+* XML
+
+Demo
+
+Why use APIs?
+
+Front-end Frameworks
+
+* React
+* Vue
+* Angular
+
+Single Page Apps
+
+Thanks!
+
+\@thecodeboss
+thecodeboss.dev
+
+@images/clevyr.png
+
+Clevyr
+\@clevyr
+https://clevyr.com
