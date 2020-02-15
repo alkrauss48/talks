@@ -1,0 +1,114 @@
+OKC WebDevs
+
+<insert logo>
+
+What are we?
+
+Anything Web Dev
+
+HTML / CSS
+JavaScript
+Python
+Ruby
+PHP
+Ruby
+.NET
+
+As well as:
+* Software dev
+* Game dev
+* Anything dev
+
+We Meet
+* 3rd Tuesday of the month
+* 11:30am - 12:30pm
+* StarSpace46
+
+@images/meetup
+
+How to GraphQL
+
+By:
+     Aaron Krauss
+
+\@thecodeboss
+
+@images/clevyr.png
+
+@images/techlahoma.png
+
+@images/code-org.png
+
+https://code.org/volunteer
+
+What is GraphQL?
+
+@images/graphql.png
+
+GraphQL is an open-source data query and
+manipulation language for APIs, and a
+runtime for fulfilling queries with existing data.
+
+GraphQL itself is just a spec
+Not the implementation itself
+
+Important Dates
+
+* Protocol built internally by Facebook in 2012
+* Released to public in 2015
+* Moved from FB to GraphQL Foundation in 2018
+
+2 Key Concepts
+
+1. GraphQL enables
+declarative data fetching
+
+2. GraphQL exposes a single endpoint
+
+3 Things You Can Do with GraphQL
+
+* Queries
+* Mutations
+* Subscriptions
+
+Why GraphQL Over REST?
+
+1. Increased mobile usage
+
+2. Variety of front-end frameworks
+
+3. Development speed increase
+
+What Companies Use GraphQL?
+
+@images/companies.png
+
+Plan:
+* Ruby on Rails
+* MariaDB
+* GraphQL
+
+Explore:
+* Queries
+* Mutations
+* Subscriptions
+
+Demo
+
+1. Install GraphQL Libraries
+
+2. Create Schema file
+
+More Info
+howtographql.com
+
+thanks
+* Aaron Krauss
+* thecodeboss.dev
+
+clevyr
+clevyr.com
+
+OKC WebDevs logo
+
+questions?
