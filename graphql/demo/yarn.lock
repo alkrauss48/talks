@@ -2,6 +2,50 @@
 # yarn lockfile v1
 
 
+"@apollo/react-common@^3.1.3":
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/@apollo/react-common/-/react-common-3.1.3.tgz#ddc34f6403f55d47c0da147fd4756dfd7c73dac5"
+  dependencies:
+    ts-invariant "^0.4.4"
+    tslib "^1.10.0"
+
+"@apollo/react-components@^3.1.3":
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/@apollo/react-components/-/react-components-3.1.3.tgz#8f6726847cd9b0eb4b22586b1a038d29aa8b1da4"
+  dependencies:
+    "@apollo/react-common" "^3.1.3"
+    "@apollo/react-hooks" "^3.1.3"
+    prop-types "^15.7.2"
+    ts-invariant "^0.4.4"
+    tslib "^1.10.0"
+
+"@apollo/react-hoc@^3.1.3":
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/@apollo/react-hoc/-/react-hoc-3.1.3.tgz#5742ee74f57611058f5ea1f966c38fc6429dda7b"
+  dependencies:
+    "@apollo/react-common" "^3.1.3"
+    "@apollo/react-components" "^3.1.3"
+    hoist-non-react-statics "^3.3.0"
+    ts-invariant "^0.4.4"
+    tslib "^1.10.0"
+
+"@apollo/react-hooks@^3.1.3":
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/@apollo/react-hooks/-/react-hooks-3.1.3.tgz#ad42c7af78e81fee0f30e53242640410d5bd0293"
+  dependencies:
+    "@apollo/react-common" "^3.1.3"
+    "@wry/equality" "^0.1.9"
+    ts-invariant "^0.4.4"
+    tslib "^1.10.0"
+
+"@apollo/react-ssr@^3.1.3":
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/@apollo/react-ssr/-/react-ssr-3.1.3.tgz#0791280d5b735f42f87dbfe849564e78843045bc"
+  dependencies:
+    "@apollo/react-common" "^3.1.3"
+    "@apollo/react-hooks" "^3.1.3"
+    tslib "^1.10.0"
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.8.3":
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.8.3.tgz#33e25903d7481181534e12ec0a25f16b6fcf419e"
@@ -57,6 +101,13 @@
   dependencies:
     "@babel/helper-explode-assignable-expression" "^7.8.3"
     "@babel/types" "^7.8.3"
+
+"@babel/helper-builder-react-jsx@^7.8.3":
+  version "7.8.3"
+  resolved "https://registry.yarnpkg.com/@babel/helper-builder-react-jsx/-/helper-builder-react-jsx-7.8.3.tgz#dee98d7d79cc1f003d80b76fe01c7f8945665ff6"
+  dependencies:
+    "@babel/types" "^7.8.3"
+    esutils "^2.0.0"
 
 "@babel/helper-call-delegate@^7.8.3":
   version "7.8.3"
@@ -311,6 +362,12 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.8.0"
 
+"@babel/plugin-syntax-jsx@^7.8.3":
+  version "7.8.3"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-jsx/-/plugin-syntax-jsx-7.8.3.tgz#521b06c83c40480f1e58b4fd33b92eceb1d6ea94"
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.8.3"
+
 "@babel/plugin-syntax-nullish-coalescing-operator@^7.8.0":
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-nullish-coalescing-operator/-/plugin-syntax-nullish-coalescing-operator-7.8.3.tgz#167ed70368886081f74b5c36c65a88c03b66d1a9"
@@ -504,6 +561,34 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.8.3"
 
+"@babel/plugin-transform-react-display-name@^7.8.3":
+  version "7.8.3"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-react-display-name/-/plugin-transform-react-display-name-7.8.3.tgz#70ded987c91609f78353dd76d2fb2a0bb991e8e5"
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.8.3"
+
+"@babel/plugin-transform-react-jsx-self@^7.8.3":
+  version "7.8.3"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-react-jsx-self/-/plugin-transform-react-jsx-self-7.8.3.tgz#c4f178b2aa588ecfa8d077ea80d4194ee77ed702"
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.8.3"
+    "@babel/plugin-syntax-jsx" "^7.8.3"
+
+"@babel/plugin-transform-react-jsx-source@^7.8.3":
+  version "7.8.3"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-react-jsx-source/-/plugin-transform-react-jsx-source-7.8.3.tgz#951e75a8af47f9f120db731be095d2b2c34920e0"
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.8.3"
+    "@babel/plugin-syntax-jsx" "^7.8.3"
+
+"@babel/plugin-transform-react-jsx@^7.8.3":
+  version "7.8.3"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-react-jsx/-/plugin-transform-react-jsx-7.8.3.tgz#4220349c0390fdefa505365f68c103562ab2fc4a"
+  dependencies:
+    "@babel/helper-builder-react-jsx" "^7.8.3"
+    "@babel/helper-plugin-utils" "^7.8.3"
+    "@babel/plugin-syntax-jsx" "^7.8.3"
+
 "@babel/plugin-transform-regenerator@^7.7.0", "@babel/plugin-transform-regenerator@^7.8.3":
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-regenerator/-/plugin-transform-regenerator-7.8.3.tgz#b31031e8059c07495bf23614c97f3d9698bc6ec8"
@@ -626,6 +711,16 @@
     levenary "^1.1.1"
     semver "^5.5.0"
 
+"@babel/preset-react@^7.8.3":
+  version "7.8.3"
+  resolved "https://registry.yarnpkg.com/@babel/preset-react/-/preset-react-7.8.3.tgz#23dc63f1b5b0751283e04252e78cf1d6589273d2"
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.8.3"
+    "@babel/plugin-transform-react-display-name" "^7.8.3"
+    "@babel/plugin-transform-react-jsx" "^7.8.3"
+    "@babel/plugin-transform-react-jsx-self" "^7.8.3"
+    "@babel/plugin-transform-react-jsx-source" "^7.8.3"
+
 "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2":
   version "7.8.4"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.8.4.tgz#d79f5a2040f7caa24d53e563aad49cbc05581308"
@@ -739,7 +834,7 @@
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
 
-"@types/node@*":
+"@types/node@*", "@types/node@>=6":
   version "13.7.1"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-13.7.1.tgz#238eb34a66431b71d2aaddeaa7db166f25971a0d"
 
@@ -750,6 +845,10 @@
 "@types/q@^1.5.1":
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.2.tgz#690a1475b84f2a884fd07cd797c00f5f31356ea8"
+
+"@types/zen-observable@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@types/zen-observable/-/zen-observable-0.8.0.tgz#8b63ab7f1aa5321248aad5ac890a485656dcea4d"
 
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"
@@ -879,6 +978,19 @@
     "@webassemblyjs/wast-parser" "1.8.5"
     "@xtuc/long" "4.2.2"
 
+"@wry/context@^0.4.0":
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/@wry/context/-/context-0.4.4.tgz#e50f5fa1d6cfaabf2977d1fda5ae91717f8815f8"
+  dependencies:
+    "@types/node" ">=6"
+    tslib "^1.9.3"
+
+"@wry/equality@^0.1.2", "@wry/equality@^0.1.9":
+  version "0.1.9"
+  resolved "https://registry.yarnpkg.com/@wry/equality/-/equality-0.1.9.tgz#b13e18b7a8053c6858aa6c85b54911fb31e3a909"
+  dependencies:
+    tslib "^1.9.3"
+
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@xtuc/ieee754/-/ieee754-1.2.0.tgz#eef014a3145ae477a1cbc00cd1e552336dceb790"
@@ -970,6 +1082,78 @@ anymatch@^2.0.0:
   dependencies:
     micromatch "^3.1.4"
     normalize-path "^2.1.1"
+
+apollo-cache-inmemory@^1.6.5:
+  version "1.6.5"
+  resolved "https://registry.yarnpkg.com/apollo-cache-inmemory/-/apollo-cache-inmemory-1.6.5.tgz#2ccaa3827686f6ed7fb634203dbf2b8d7015856a"
+  dependencies:
+    apollo-cache "^1.3.4"
+    apollo-utilities "^1.3.3"
+    optimism "^0.10.0"
+    ts-invariant "^0.4.0"
+    tslib "^1.10.0"
+
+apollo-cache@1.3.4, apollo-cache@^1.3.4:
+  version "1.3.4"
+  resolved "https://registry.yarnpkg.com/apollo-cache/-/apollo-cache-1.3.4.tgz#0c9f63c793e1cd6e34c450f7668e77aff58c9a42"
+  dependencies:
+    apollo-utilities "^1.3.3"
+    tslib "^1.10.0"
+
+apollo-client@^2.6.8:
+  version "2.6.8"
+  resolved "https://registry.yarnpkg.com/apollo-client/-/apollo-client-2.6.8.tgz#01cebc18692abf90c6b3806414e081696b0fa537"
+  dependencies:
+    "@types/zen-observable" "^0.8.0"
+    apollo-cache "1.3.4"
+    apollo-link "^1.0.0"
+    apollo-utilities "1.3.3"
+    symbol-observable "^1.0.2"
+    ts-invariant "^0.4.0"
+    tslib "^1.10.0"
+    zen-observable "^0.8.0"
+
+apollo-link-error@^1.1.12:
+  version "1.1.12"
+  resolved "https://registry.yarnpkg.com/apollo-link-error/-/apollo-link-error-1.1.12.tgz#e24487bb3c30af0654047611cda87038afbacbf9"
+  dependencies:
+    apollo-link "^1.2.13"
+    apollo-link-http-common "^0.2.15"
+    tslib "^1.9.3"
+
+apollo-link-http-common@^0.2.15:
+  version "0.2.15"
+  resolved "https://registry.yarnpkg.com/apollo-link-http-common/-/apollo-link-http-common-0.2.15.tgz#304e67705122bf69a9abaded4351b10bc5efd6d9"
+  dependencies:
+    apollo-link "^1.2.13"
+    ts-invariant "^0.4.0"
+    tslib "^1.9.3"
+
+apollo-link-http@^1.5.16:
+  version "1.5.16"
+  resolved "https://registry.yarnpkg.com/apollo-link-http/-/apollo-link-http-1.5.16.tgz#44fe760bcc2803b8a7f57fc9269173afb00f3814"
+  dependencies:
+    apollo-link "^1.2.13"
+    apollo-link-http-common "^0.2.15"
+    tslib "^1.9.3"
+
+apollo-link@^1.0.0, apollo-link@^1.2.13:
+  version "1.2.13"
+  resolved "https://registry.yarnpkg.com/apollo-link/-/apollo-link-1.2.13.tgz#dff00fbf19dfcd90fddbc14b6a3f9a771acac6c4"
+  dependencies:
+    apollo-utilities "^1.3.0"
+    ts-invariant "^0.4.0"
+    tslib "^1.9.3"
+    zen-observable-ts "^0.8.20"
+
+apollo-utilities@1.3.3, apollo-utilities@^1.3.0, apollo-utilities@^1.3.3:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/apollo-utilities/-/apollo-utilities-1.3.3.tgz#f1854715a7be80cd810bc3ac95df085815c0787c"
+  dependencies:
+    "@wry/equality" "^0.1.2"
+    fast-json-stable-stringify "^2.0.0"
+    ts-invariant "^0.4.0"
+    tslib "^1.10.0"
 
 aproba@^1.0.3, aproba@^1.1.1:
   version "1.2.0"
@@ -1123,6 +1307,10 @@ babel-plugin-macros@^2.6.1:
     "@babel/runtime" "^7.7.2"
     cosmiconfig "^6.0.0"
     resolve "^1.12.0"
+
+babel-plugin-transform-react-remove-prop-types@^0.4.24:
+  version "0.4.24"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-react-remove-prop-types/-/babel-plugin-transform-react-remove-prop-types-0.4.24.tgz#f2edaf9b4c6a5fbe5c1d678bfb531078c1555f3a"
 
 balanced-match@^1.0.0:
   version "1.0.0"
@@ -2282,7 +2470,7 @@ estraverse@^4.1.0, estraverse@^4.1.1:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/estraverse/-/estraverse-4.3.0.tgz#398ad3f3c5a24948be7725e83d11a7de28cdbd1d"
 
-esutils@^2.0.2:
+esutils@^2.0.0, esutils@^2.0.2:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/esutils/-/esutils-2.0.3.tgz#74d2eb4de0b8da1293711910d50775b9b710ef64"
 
@@ -2739,6 +2927,16 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.2.2
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.3.tgz#4a12ff1b60376ef09862c2093edd908328be8423"
 
+graphql-tag@^2.10.3:
+  version "2.10.3"
+  resolved "https://registry.yarnpkg.com/graphql-tag/-/graphql-tag-2.10.3.tgz#ea1baba5eb8fc6339e4c4cf049dabe522b0edf03"
+
+graphql@^14.6.0:
+  version "14.6.0"
+  resolved "https://registry.yarnpkg.com/graphql/-/graphql-14.6.0.tgz#57822297111e874ea12f5cd4419616930cd83e49"
+  dependencies:
+    iterall "^1.2.2"
+
 handle-thing@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/handle-thing/-/handle-thing-2.0.0.tgz#0e039695ff50c93fc288557d696f3c1dc6776754"
@@ -2834,6 +3032,12 @@ hmac-drbg@^1.0.0:
     hash.js "^1.0.3"
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.1"
+
+hoist-non-react-statics@^3.3.0:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
+  dependencies:
+    react-is "^16.7.0"
 
 homedir-polyfill@^1.0.1:
   version "1.0.3"
@@ -3312,6 +3516,10 @@ isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
 
+iterall@^1.2.2:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/iterall/-/iterall-1.3.0.tgz#afcb08492e2915cbd8a0884eb93a8c94d0d72fea"
+
 jest-worker@^25.1.0:
   version "25.1.0"
   resolved "https://registry.yarnpkg.com/jest-worker/-/jest-worker-25.1.0.tgz#75d038bad6fdf58eba0d2ec1835856c497e3907a"
@@ -3520,7 +3728,7 @@ loglevel@^1.6.6:
   version "1.6.7"
   resolved "https://registry.yarnpkg.com/loglevel/-/loglevel-1.6.7.tgz#b3e034233188c68b889f5b862415306f565e2c56"
 
-loose-envify@^1.0.0:
+loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
   dependencies:
@@ -4082,6 +4290,12 @@ opn@^5.5.0:
   resolved "https://registry.yarnpkg.com/opn/-/opn-5.5.0.tgz#fc7164fab56d235904c51c3b27da6758ca3b9bfc"
   dependencies:
     is-wsl "^1.1.0"
+
+optimism@^0.10.0:
+  version "0.10.3"
+  resolved "https://registry.yarnpkg.com/optimism/-/optimism-0.10.3.tgz#163268fdc741dea2fb50f300bedda80356445fd7"
+  dependencies:
+    "@wry/context" "^0.4.0"
 
 optimize-css-assets-webpack-plugin@^5.0.3:
   version "5.0.3"
@@ -4954,6 +5168,14 @@ promise-inflight@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/promise-inflight/-/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
 
+prop-types@^15.6.2, prop-types@^15.7.2:
+  version "15.7.2"
+  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
+  dependencies:
+    loose-envify "^1.4.0"
+    object-assign "^4.1.1"
+    react-is "^16.8.1"
+
 proxy-addr@~2.0.5:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/proxy-addr/-/proxy-addr-2.0.5.tgz#34cbd64a2d81f4b1fd21e76f9f06c8a45299ee34"
@@ -5074,6 +5296,37 @@ raw-body@2.4.0:
     http-errors "1.7.2"
     iconv-lite "0.4.24"
     unpipe "1.0.0"
+
+react-apollo@^3.1.3:
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/react-apollo/-/react-apollo-3.1.3.tgz#5d8540b401bba36173b63e6c5e75fa561960c63e"
+  dependencies:
+    "@apollo/react-common" "^3.1.3"
+    "@apollo/react-components" "^3.1.3"
+    "@apollo/react-hoc" "^3.1.3"
+    "@apollo/react-hooks" "^3.1.3"
+    "@apollo/react-ssr" "^3.1.3"
+
+react-dom@^16.12.0:
+  version "16.12.0"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.12.0.tgz#0da4b714b8d13c2038c9396b54a92baea633fe11"
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
+    scheduler "^0.18.0"
+
+react-is@^16.7.0, react-is@^16.8.1:
+  version "16.12.0"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.12.0.tgz#2cc0fe0fba742d97fd527c42a13bec4eeb06241c"
+
+react@^16.12.0:
+  version "16.12.0"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.12.0.tgz#0c0a9c6a142429e3614834d5a778e18aa78a0b83"
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
 
 read-cache@^1.0.0:
   version "1.0.0"
@@ -5351,6 +5604,13 @@ sass-loader@7.3.1:
 sax@~1.2.4:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
+
+scheduler@^0.18.0:
+  version "0.18.0"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.18.0.tgz#5901ad6659bc1d8f3fdaf36eb7a67b0d6746b1c4"
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
 
 schema-utils@^1.0.0:
   version "1.0.0"
@@ -5866,6 +6126,10 @@ svgo@^1.0.0:
     unquote "~1.1.1"
     util.promisify "~1.0.0"
 
+symbol-observable@^1.0.2:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
+
 tapable@^1.0.0, tapable@^1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/tapable/-/tapable-1.1.3.tgz#a1fccc06b58db61fd7a45da2da44f5f3a3e67ba2"
@@ -5986,11 +6250,17 @@ trim-newlines@^1.0.0:
   dependencies:
     glob "^7.1.2"
 
+ts-invariant@^0.4.0, ts-invariant@^0.4.4:
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/ts-invariant/-/ts-invariant-0.4.4.tgz#97a523518688f93aafad01b0e80eb803eb2abd86"
+  dependencies:
+    tslib "^1.9.3"
+
 ts-pnp@^1.1.2:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/ts-pnp/-/ts-pnp-1.1.5.tgz#840e0739c89fce5f3abd9037bb091dbff16d9dec"
 
-tslib@^1.9.0:
+tslib@^1.10.0, tslib@^1.9.0, tslib@^1.9.3:
   version "1.10.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.10.0.tgz#c3c19f95973fb0a62973fb09d90d961ee43e5c8a"
 
@@ -6473,3 +6743,14 @@ yargs@^7.0.0:
     which-module "^1.0.0"
     y18n "^3.2.1"
     yargs-parser "^5.0.0"
+
+zen-observable-ts@^0.8.20:
+  version "0.8.20"
+  resolved "https://registry.yarnpkg.com/zen-observable-ts/-/zen-observable-ts-0.8.20.tgz#44091e335d3fcbc97f6497e63e7f57d5b516b163"
+  dependencies:
+    tslib "^1.9.3"
+    zen-observable "^0.8.0"
+
+zen-observable@^0.8.0:
+  version "0.8.15"
+  resolved "https://registry.yarnpkg.com/zen-observable/-/zen-observable-0.8.15.tgz#96415c512d8e3ffd920afd3889604e30b9eaac15"
