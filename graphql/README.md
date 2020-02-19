@@ -1,14 +1,17 @@
-How Blocks Work in Ruby
+How to GraphQL
 ==
-Also includes Procs and Lambdas.
 
-By [Aaron Krauss](https://thesocietea.org)
+By [Aaron Krauss](https://thecodeboss.dev)
 
 ## Running the Code
 
 ```
-cd code
-ruby example1.rb # And so on...
+docker-compose up
+
+cd demo
+cp .env.example .env
+rails db:reset
+rails s
 ```
 
 ## Running the Presentation
