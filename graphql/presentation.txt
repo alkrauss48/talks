@@ -24,7 +24,7 @@ We Meet
 * 11:30am - 12:30pm
 * StarSpace46
 
-@images/meetup
+@images/meetup.png
 
 How to GraphQL
 
@@ -49,6 +49,21 @@ GraphQL is an open-source data query and
 manipulation language for APIs, and a
 runtime for fulfilling queries with existing data.
 
+My definition
+
+GraphQL makes querying data much simpler
+by allowing the client to control querying
+the data that it needs.
+
+It's also really simple
+once you have it set up
+
+GraphQL is language agnostic
+
+GraphQL is database/service agnostic
+
+@images/graphql-agnostic.png
+
 GraphQL itself is just a spec
 Not the implementation itself
 
@@ -65,7 +80,11 @@ declarative data fetching
 
 2. GraphQL exposes a single endpoint
 
+Endpoint is a POST request
+
 3 Things You Can Do with GraphQL
+
+aka Operation Types
 
 * Queries
 * Mutations
@@ -73,11 +92,13 @@ declarative data fetching
 
 Why GraphQL Over REST?
 
-1. Increased mobile usage
+1. Solves overfetching and underfetching
 
-2. Variety of front-end frameworks
+Important for increased mobile usage
 
-3. Development speed increase
+2. Development speed increase
+
+3. Variety of front-end frameworks
 
 What Companies Use GraphQL?
 
@@ -85,22 +106,90 @@ What Companies Use GraphQL?
 
 Plan:
 * Ruby on Rails
-* MariaDB
+* PostgreSQL
 * GraphQL
 
 Explore:
 * Queries
 * Mutations
-* Subscriptions
+
+Data:
+A User has many Items
 
 Demo
 
-1. Install GraphQL Libraries
+0. Set up the project
 
-2. Create Schema file
+1. Install GraphQL library
+
+2. Getting to GraphQL Logic
+
+3. Create Schema file
+
+4. Create Types
+
+5. Test a Query
+
+6. Write Mutations
+
+My big question over mutations:
+
+Can you do side effects?
+
+7. Test a Mutation
+
+8. Apollo Client
+
+What comes after GraphQL?
+
+(Opinions following)
+
+An interesting pattern
+in server architecture
+
+GraphQL solved issues with REST
+
+REST == close to the minimal core HTTP Rules
+
+It's relatively minimal and flexible
+
+GraphQL is a spec for a system that
+revolves around a strong server tool
+
+We've kind of done this before
+
+Before REST:
+* SOAP
+
+SOAP is a also spec for a system that
+revolves around a strong server "tool"
+
+Before SOAP:
+* RPC
+
+RPC had more structure than REST,
+but was largely pretty simple
+
+Will the next thing deem
+GraphQL as too complicated?
+
+idk
+
+(End Opinions)
 
 More Info
 howtographql.com
+
+GraphQL with .NET
+OKC-Sharp
+Monday, March 2nd
+
+Next OKCWebDevs Talk
+Tuesday, March 17th
+(St. Patricks' Day)
+
+Microservices using NestJs
+Stephen Vincent
 
 thanks
 * Aaron Krauss

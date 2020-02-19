@@ -9,7 +9,7 @@ module Types
       description: 'Returns a list of items'
 
     def items
-      Item.all
+      Item.includes(:user).all
     end
   end
 end
