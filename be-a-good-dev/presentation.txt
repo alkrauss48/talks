@@ -1,0 +1,86 @@
+How to be a good
+dev on a team
+
+By:
+     Aaron Krauss
+
+\@thecodeboss
+
+@images/clevyr.png
+
+How to be a good
+dev on a team
+
+Sneak Peek:
+Not a lot of it has
+to do with actual coding
+
+3 concepts
+
+1) Know that your code will
+be viewed by other people
+
+Sometimes decades later
+
+* Comment code
+
+* Label things appropriately
+
+* Whitespace your code
+
+2) Communicate
+
+* The good things
+* The bad things
+
+* Communicate about progress,
+roadblocks, deadlines, concerns,
+ideas, etc.
+
+* No limit on who to communicate with
+
+* Bosses
+* Coworkers
+* Subordinates
+
+* Caveat: don't gossip
+
+3) Play a role in
+non-dev processes
+
+* At first as a junior dev,
+just try to complete the
+tasks that you are given.
+
+* As you become more comfortable though,
+you can help give feedback with:
+
+* Sales
+* Project Management
+* Design
+* And more
+
+Being a developer is a unique
+perspective that only you can offer
+
+And that feedback is valuable to
+the rest of the business
+
+Don't make demands. Just give feedback.
+
+tl;dr
+
+It's not your job to only sit and code.
+It's your job to contribute to the business.
+
+Business drives development,
+and not the other way around.
+
+thanks
+* Aaron Krauss
+* thecodeboss.dev
+
+clevyr
+clevyr.com
+
+questions?
