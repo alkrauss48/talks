@@ -1,0 +1,177 @@
+OKC WebDevs
+
+What are we?
+
+Anything Web Dev
+
+HTML / CSS
+JavaScript
+Python
+Ruby
+PHP
+Ruby
+.NET
+
+As well as:
+* Machine Learning / AI
+* Game dev
+* Mobile dev
+* etc.
+
+@images/techlahoma.png
+
+<insert OKC WebDevs logo>
+
+@images/meetup.png
+
+We Meet
+* 3rd Tuesday of the month
+* 11:30am - 12:30pm
+
+How JWTs Work
+
+By:
+     Aaron Krauss
+
+\@thecodeboss
+
+@images/clevyr.png
+
+What are JWTs
+
+JSON Web Tokens
+
+JWT is an open standard (RFC 7519) that defines a
+compact and self-contained way for securely
+transmitting information between parties as a JSON object.
+
+Historically you use tokens to
+"allow" you to retrieve data
+
+JWTs are the actual data
+
+Benefits:
+
+Don't need an extra lookup
+for auth or other data
+
+* This saves a DB request.
+* Makes micro-service authentication easier.
+
+And, there are plenty of tools to handle
+formatting JWTs for you.
+
+What do they look like?
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.
+eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWV9.
+TJVA95OrM7E2cBab30RMHrHDcEfxjoYZgeFONFh7HgQ
+
+Passing around the JWT?
+
+Recommendation from JWT:
+Use the HTTP Authorization Header
+
+Authorization: Bearer <token>
+
+JWT - 3 Parts
+* Header
+* Payload
+* Signature
+
+All separated by periods
+
+Looks like:
+xxxxx.yyyyy.zzzzz
+
+Header
+* the type of the token, which is JWT
+* the signing algorithm being used (HMAC SHA256, RSA, etc.)
+
+{
+  "alg": "HS256",
+  "typ": "JWT"
+}
+
+Header is Base64 encoded
+
+Payload
+
+The payload represents "claims"
+aka the data you're sending
+
+Claims are statements about an entity
+(typically, the user) and additional data.
+
+{
+  "sub": "1234567890",
+  "name": "John Doe",
+  "admin": true
+}
+
+There are three types of claims:
+* Registered
+* Public
+* Private
+
+* Registered = Predefined & Recommended (iss, sub, exp, etc.)
+* Public = Publicly defined keys
+* Private = anything else (i.e. custom claims)
+
+Payload is Base64 encoded
+
+Signature
+
+To sign a JWT, you need:
+* Algorithm defined in the Header
+* Encoded header
+* Encoded payload
+* A secret
+
+Example:
+
+HMACSHA256(
+  base64UrlEncode(header) + "." +
+  base64UrlEncode(payload),
+  secret)
+
+Security
+
+JWTs are Base64 encoded,
+which isn't secure
+
+How do you secure JWTs?
+
+* JWS
+* JWE
+
+JWS = JSON Web Signatures
+
+We are already using JWS in this example
+
+JWE = JSON Web Encryption
+
+You can encrypt your JWTs,
+to prevent people from being able to read
+the contents
+
+You can do both JWS & JWE, either/or, etc.
+
+And remember, you don't need to reinvent the wheel
+
+Likely, your language of choice has
+good JWT libraries already
+
+Learn More
+
+https://jwt.io/
+Get a free E-book
+
+thanks
+* Aaron Krauss
+* thecodeboss.dev
+
+clevyr
+clevyr.com
+
+questions?
