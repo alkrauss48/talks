@@ -1,0 +1,6 @@
+#!/bin/sh
+
+set -eux
+
+npm install --frozen-lockfile
+exec npm run watch -- --no-progress

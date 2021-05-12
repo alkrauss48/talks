@@ -1,0 +1,30 @@
+#!/bin/sh
+set -ex
+
+cd /app
+
+if [ "$APP_ENV" != "local" ]; then
+    php artisan config:cache
+else
+    composer install --ignore-platform-reqs --no-interaction --no-progress
+    php artisan config:clear
+    php artisan vendor:publish --tag=public
+fi
+
+if [ -L public/storage ]; then
+    rm public/storage
+fi
+ln -s ../storage/app/public public/storage
+
+if [ "$TELESCOPE_ENABLED" = "true" ]; then
+    php artisan vendor:publish --tag=telescope-assets --force
+fi
+
+if [ "$DB_FRESH_ON_START" = "true" ]; then
+    php artisan migrate:fresh
+    php artisan db:seed
+else
+    php artisan migrate --force
+fi
+
+exec php-fpm

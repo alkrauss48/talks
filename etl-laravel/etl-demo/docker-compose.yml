@@ -1,0 +1,68 @@
+version: "2.4"
+
+x-app: &app
+  env_file:
+    - .env
+  environment:
+    DB_HOST: database
+    HTTPS: "true"
+    MAIL_HOST: mail
+    REDIS_HOST: redis
+  image: clevyr/etl-demo/app
+  restart: unless-stopped
+  volumes:
+    - .:/app
+
+services:
+  app:
+    <<: *app
+    build:
+      args:
+        INSTALL_XDEBUG: "true"
+        NODE_ENV: development
+      context: .
+      dockerfile: docker/app/Dockerfile
+
+  worker:
+    <<: *app
+    command: ["s6-svscan", "/etc/s6/worker"]
+
+  proxy:
+    image: clevyr/caddy
+    ports:
+      - 80:80
+      - 443:443
+    restart: unless-stopped
+    volumes:
+      - ~/.config/caddy:/data
+
+  database:
+    environment:
+      POSTGRES_USER: "$DB_USERNAME"
+      POSTGRES_PASSWORD: "$DB_PASSWORD"
+      POSTGRES_DB: "$DB_DATABASE"
+    image: postgres:12-alpine
+    ports:
+      - 127.0.0.1:5432:5432
+    restart: unless-stopped
+    volumes:
+      - database:/var/lib/postgresql/data
+
+  redis:
+    image: redis:alpine
+    ports:
+      - 127.0.0.1:6379:6379
+    restart: unless-stopped
+
+  mail:
+    environment:
+      MH_API_BIND_ADDR: :80
+      MH_UI_BIND_ADDR: :80
+      MH_SMTP_BIND_ADDR: :25
+    image: mailhog/mailhog
+    ports:
+      - 127.0.0.1:25:25
+    restart: unless-stopped
+
+volumes:
+  database:

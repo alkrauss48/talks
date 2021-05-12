@@ -1,0 +1,39 @@
+{
+	"AppName": "etl-demo",
+	"AppKey": "base64:KQoE+UQnHkIOcWyJFygfU4dx5iTlzdDhyT/EHYf5g5o=",
+	"Database": "PostgreSQL",
+	"PhpModules": {
+		"bcmath": {},
+		"calendar": {},
+		"exif": {},
+		"gd": {},
+		"imagick": {},
+		"mosquitto": {},
+		"mysql": {},
+		"opcache": {
+			"Enabled": true
+		},
+		"pgsql": {
+			"Enabled": true
+		},
+		"redis": {
+			"Enabled": true
+		},
+		"sqlsrv": {},
+		"xdebug": {},
+		"zip": {}
+	},
+	"AdminGen": "None",
+	"ComposerDeps": {
+		"backpack/crud": {},
+		"clevyr/backpack-page-builder": {},
+		"laravel/nova": {},
+		"nunomaduro/larastan": {
+			"Enabled": true
+		},
+		"superbalist/laravel-google-cloud-storage": {
+			"Enabled": true
+		}
+	},
+	"MaxUploadSize": "64m"
+}
