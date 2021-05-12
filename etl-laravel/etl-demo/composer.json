@@ -36,8 +36,10 @@
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.40",
+        "laravel/telescope": "^4.4",
         "laravel/tinker": "^2.5",
-        "superbalist/laravel-google-cloud-storage": "^2.2"
+        "superbalist/laravel-google-cloud-storage": "^2.2",
+        "symfony/stopwatch": "^5.2"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
