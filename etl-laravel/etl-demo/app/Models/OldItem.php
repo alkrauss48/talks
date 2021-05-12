@@ -9,7 +9,22 @@ class OldItem extends Model
 {
     use HasFactory;
 
+    protected $guarded = [];
+
+    public function transform($storeId) {
+        return [
+            'full_name' => $this->name1
+                . ' ' . $this->name2,
+
+            'amount' => $this->quantity,
+
+            'old_item_id' => $this->id,
+
+            'store_id' => $storeId,
+        ];
+    }
+
     public function store() {
-        return $this->belongsTo('App\OldStore');
+        return $this->belongsTo('App\Models\OldStore');
     }
 }
