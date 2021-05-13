@@ -10,14 +10,14 @@ use App\Models\OldItem;
 use App\Models\OldStore;
 use App\Models\Store;
 
-class Step6 extends Command
+class Step9 extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'step6';
+    protected $signature = 'step9';
 
     /**
      * The console command description.
@@ -62,6 +62,38 @@ class Step6 extends Command
         Item::insert($newItemData);
     }
 
+    public function deleteStores($oldStoreIds)
+    {
+        Store::whereIn('old_store_id', $oldStoreIds)
+            ->delete();
+    }
+
+    public function updateStores($oldStoreIds)
+    {
+        $oldStores = OldStore::whereIn('id', $oldStoreIds)->get();
+        $oldItems = OldItem::whereIn('old_store_id', $oldStoreIds)->get();
+
+        $stores = Store::whereIn('old_store_id', $oldStoreIds)
+            ->get()
+            ->groupBy('old_store_id');
+
+        $items = Item::whereIn('old_item_id', $oldItems->pluck('id'))
+            ->get()
+            ->groupBy('old_item_id');
+
+        foreach($oldStores as $oldStore) {
+            $store = $stores[$oldStore->id][0];
+
+            $store->update( $oldStore->transform() );
+        }
+
+        foreach($oldItems as $oldItem) {
+            $item = $items[$oldItem->id][0];
+
+            $item->update( $oldItem->transform() );
+        }
+    }
+
     /**
      * Execute the console command.
      *
@@ -69,10 +101,7 @@ class Step6 extends Command
      */
     public function handle()
     {
-        // NEW THIS STEP: Handle Venn-Diagram-style Create/Update/Delete
-
-        // Delete Store and Items (via cascade) First.
-        Store::truncate();
+        // NEW THIS STEP: Refactor Store & Item Update Process
 
         info('START');
         $stopwatch = new Stopwatch();
@@ -92,8 +121,8 @@ class Step6 extends Command
         info('Update: ' . count($storeIdsToUpdate));
 
         $this->insertStores($storeIdsToAdd);
-
-        // TODO: Update and Delete Store Data
+        $this->deleteStores($storeIdsToRemove);
+        $this->updateStores($storeIdsToUpdate);
 
         info($stopwatch->stop(__FUNCTION__));
     }

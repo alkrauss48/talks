@@ -11,17 +11,18 @@ class OldItem extends Model
 
     protected $guarded = [];
 
-    public function transform($storeId) {
-        return [
-            'full_name' => $this->name1
-                . ' ' . $this->name2,
-
+    public function transform($storeId = null) {
+        $properties = [
+            'full_name' => $this->name1 . ' ' . $this->name2,
             'amount' => $this->quantity,
-
             'old_item_id' => $this->id,
-
-            'store_id' => $storeId,
         ];
+
+        if ($storeId) {
+            $properties['store_id'] = $storeId;
+        }
+
+        return $properties;
     }
 
     public function store() {

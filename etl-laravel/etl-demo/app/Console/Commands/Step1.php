@@ -45,7 +45,6 @@ class Step1 extends Command
         // Delete Store and Items (via cascade) First.
         Store::truncate();
 
-        // INSERTING
         info('START');
         $oldStores = OldStore::all();
 

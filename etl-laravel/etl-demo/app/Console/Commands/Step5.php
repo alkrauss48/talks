@@ -48,10 +48,9 @@ class Step5 extends Command
         // Delete Store and Items (via cascade) First.
         Store::truncate();
 
-        // INSERTING
         info('START');
         $stopwatch = new Stopwatch();
-        $stopwatch->start(__FUNCTION__, 'Insert Data');
+        $stopwatch->start(__FUNCTION__, 'Process Data');
 
         $oldStores = OldStore::with('items')->get();
 

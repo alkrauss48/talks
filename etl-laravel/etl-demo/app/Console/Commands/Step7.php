@@ -77,10 +77,9 @@ class Step7 extends Command
     {
         // NEW THIS STEP: Handle deleting store records
 
-        // INSERTING
         info('START');
         $stopwatch = new Stopwatch();
-        $stopwatch->start(__FUNCTION__, 'Insert Data');
+        $stopwatch->start(__FUNCTION__, 'Process Data');
 
         $oldStoreIds = OldStore::pluck('id');
         $existingOldStoreIds = Store::pluck('old_store_id');

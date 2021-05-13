@@ -95,10 +95,9 @@ class Step8 extends Command
     {
         // NEW THIS STEP: Handle updating store records
 
-        // INSERTING
         info('START');
         $stopwatch = new Stopwatch();
-        $stopwatch->start(__FUNCTION__, 'Insert Data');
+        $stopwatch->start(__FUNCTION__, 'Process Data');
 
         $oldStoreIds = OldStore::pluck('id');
         $existingOldStoreIds = Store::pluck('old_store_id');
