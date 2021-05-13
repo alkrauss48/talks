@@ -3,20 +3,21 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
+use Symfony\Component\Stopwatch\Stopwatch;
 
 use App\Models\Item;
 use App\Models\OldItem;
 use App\Models\OldStore;
 use App\Models\Store;
 
-class Step2 extends Command
+class Step3 extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'step2';
+    protected $signature = 'step3';
 
     /**
      * The console command description.
@@ -42,13 +43,16 @@ class Step2 extends Command
      */
     public function handle()
     {
-        // NEW THIS STEP: Insert Items along with Stores
+        // NEW THIS STEP: Add Stopwatch
 
         // Delete Store and Items (via cascade) First.
         Store::truncate();
 
         // INSERTING
         info('START');
+        $stopwatch = new Stopwatch();
+        $stopwatch->start(__FUNCTION__, 'Insert Data');
+
         $oldStores = OldStore::all();
 
         foreach($oldStores as $oldStore) {
@@ -63,5 +67,7 @@ class Step2 extends Command
                 Item::create($newItemData);
             }
         }
+
+        info($stopwatch->stop(__FUNCTION__));
     }
 }

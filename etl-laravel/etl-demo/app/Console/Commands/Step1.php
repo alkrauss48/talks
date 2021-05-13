@@ -53,6 +53,6 @@ class Step1 extends Command
             $newStoreData = $oldStore->transform();
 
             Store::create( $newStoreData );
-        };
+        }
     }
 }
