@@ -38,6 +38,10 @@ class Step6 extends Command
 
     public function insertStores($oldStoreIds)
     {
+        if(count($oldStoreIds) === 0) {
+            return;
+        }
+
         $oldStores = OldStore::with('items')
             ->whereIn('id', $oldStoreIds)
             ->get();

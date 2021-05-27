@@ -38,6 +38,10 @@ class Step8 extends Command
 
     public function insertStores($oldStoreIds)
     {
+        if(count($oldStoreIds) === 0) {
+            return;
+        }
+
         $oldStores = OldStore::with('items')
             ->whereIn('id', $oldStoreIds)
             ->get();
@@ -64,12 +68,20 @@ class Step8 extends Command
 
     public function deleteStores($oldStoreIds)
     {
+        if(count($oldStoreIds) === 0) {
+            return;
+        }
+
         Store::whereIn('old_store_id', $oldStoreIds)
             ->delete();
     }
 
     public function updateStores($oldStoreIds)
     {
+        if(count($oldStoreIds) === 0) {
+            return;
+        }
+
         $oldStores = OldStore::with('items')
             ->whereIn('id', $oldStoreIds)
             ->get();

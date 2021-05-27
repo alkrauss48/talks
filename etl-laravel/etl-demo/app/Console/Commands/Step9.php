@@ -38,6 +38,10 @@ class Step9 extends Command
 
     public function insertStores($oldStoreIds)
     {
+        if(count($oldStoreIds) === 0) {
+            return;
+        }
+
         $oldStores = OldStore::with('items')
             ->whereIn('id', $oldStoreIds)
             ->get();
@@ -64,12 +68,20 @@ class Step9 extends Command
 
     public function deleteStores($oldStoreIds)
     {
+        if(count($oldStoreIds) === 0) {
+            return;
+        }
+
         Store::whereIn('old_store_id', $oldStoreIds)
             ->delete();
     }
 
     public function updateStores($oldStoreIds)
     {
+        if(count($oldStoreIds) === 0) {
+            return;
+        }
+
         $oldStores = OldStore::whereIn('id', $oldStoreIds)->get();
         $oldItems = OldItem::whereIn('old_store_id', $oldStoreIds)->get();
 
@@ -102,6 +114,7 @@ class Step9 extends Command
     public function handle()
     {
         // NEW THIS STEP: Refactor Store & Item Update Process
+        Store::truncate();
 
         info('START');
         $stopwatch = new Stopwatch();
