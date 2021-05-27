@@ -1,0 +1,93 @@
+Extracting, Loading,
+and Transform Data
+Really Efficiently
+with Laravel
+
+By:
+     Aaron Krauss
+
+\@thecodeboss
+
+@images/clevyr.png
+
+This Talk Includes:
+
+* A little bit of slides
+* A lot of live demo
+
+ETL
+
+Extract
+Transform
+Load
+
+@images/etl-1.png
+
+ETL Pipelines
+
+Read / Write
+
+Read = Read
+
+Write =
+
+* Insert
+* Update
+* Delete
+
+Live Demo
+
+Quick Intro into Laravel
+
+Our ETL Demo
+
+OldStore -> Item
+OldItem -> Item
+
+How to Improve
+
+0. Track metrics
+
+1. Implement bulk queries
+
+2. Keep logic flat
+
+3. Write only as needed
+
+Writes are more expensive
+than Reads for two reasons:
+
+* You're writing to a file
+* You're breaking database cache
+
+4. Implement database indexing
+
+Done
+
+Takeaways:
+
+0. Track metrics
+1. Implement bulk queries
+2. Keep logic flat
+3. Write only as needed
+4. Implement database indexing
+
+Big Takeaway:
+
+None of this only
+applies to ETL!
+
+You can use these
+concepts in all of
+your data-driven projects
+
+Verbal Proof
+
+thanks
+* Aaron Krauss
+* thecodeboss.dev
+
+clevyr
+clevyr.com
+
+questions?
