@@ -44,15 +44,22 @@ Our ETL Demo
 OldStore -> Item
 OldItem -> Item
 
-How to Improve
+Building a good ETL process
 
-0. Track metrics
+0. Pre-process the data
 
-1. Implement bulk queries
+You want the data to end up
+in a form that will make
+the rest of your application
+the most efficient.
 
-2. Keep logic flat
+1. Track metrics
 
-3. Write only as needed
+2. Implement bulk queries
+
+3. Keep logic flat
+
+4. Write only as needed
 
 Writes are more expensive
 than Reads for two reasons:
@@ -60,17 +67,30 @@ than Reads for two reasons:
 * You're writing to a file
 * You're breaking database cache
 
-4. Implement database indexing
+5. Implement database indexing
 
 Done
 
+Disclaimer
+
+This isn't a perfect
+ETL tool
+
+Problems:
+
+0. We're not paginating through table data
+
+1. Ideally you could use a "modified_at" field
+to limit reads
+
 Takeaways:
 
-0. Track metrics
-1. Implement bulk queries
-2. Keep logic flat
-3. Write only as needed
-4. Implement database indexing
+0. Pre-process the data
+1. Track metrics
+2. Implement bulk queries
+3. Keep logic flat
+4. Write only as needed
+5. Implement database indexing
 
 Big Takeaway:
 
@@ -81,7 +101,39 @@ You can use these
 concepts in all of
 your data-driven projects
 
-Verbal Proof
+Taking ETL to the next level
+
+* Multi-granularity syncs
+
+* Quick Sync
+* Full Sync
+* Overnight Sync
+
+Examples of ETL
+Processes I've Built
+
+Pharmaceuticals Client
+
+* Database Indexing
+  * Took site load from 7s -> 1s
+
+* Multi-granularity syncs
+  * Quick - 10s
+  * Full - 2m
+  * Overnight - 2h
+
+Oil & Gas Client
+
+* Pre-process the data
+* Implement bulk queries
+* Keep logic flat
+
+* Took site load from 18s -> 1s
+
+How?
+
+* Removed 500 queries from dashboard
+* Removed procesing of data on client
 
 thanks
 * Aaron Krauss
