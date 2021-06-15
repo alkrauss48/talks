@@ -9,7 +9,12 @@ As you might expect, ETL processes involve a lot of data, and it's up to you to 
 
 Aaron Krauss is a senior software engineer at Clevyr where he works with an awesome team building web apps, mobile apps, games, and more. Off work hours, he and his wife just welcomed their first-born son into the world which is taking up all his free time!
 
-## To Run
+## Run the Slides
+```
+./sent presentation.txt
+```
+
+## Run the App
 ```
 cd etl-demo
 
