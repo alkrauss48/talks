@@ -38,14 +38,15 @@ Write =
 * Update
 * Delete
 
+@images/store-venn.png
+
 Live Demo
 
 Quick Intro into Laravel
 
 The Data
 
-OldStore -> Store
-OldItem -> Item
+@images/store-data.png
 
 Our ETL Demo
 
@@ -63,6 +64,8 @@ the most efficient.
 2. Implement bulk queries
 
 3. Keep logic flat
+
+@images/store-venn.png
 
 4. Write only as needed
 

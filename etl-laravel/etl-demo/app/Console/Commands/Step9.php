@@ -114,7 +114,7 @@ class Step9 extends Command
     public function handle()
     {
         // NEW THIS STEP: Refactor Store & Item Update Process
-        Store::truncate();
+        // Store::truncate();
 
         info('START');
         $stopwatch = new Stopwatch();
