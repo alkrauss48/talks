@@ -1,0 +1,364 @@
+How Swift Works
+Under the Hood
+
+By:
+     Aaron Krauss
+
+\@thecodeboss
+
+@images/clevyr.png
+
+OKC WebDevs
+
+@images/meetup.png
+
+How Swift Works
+Under the Hood
+
+The Plan
+
+* What It Is
+* History
+* Programming Concepts
+* Storyboard / SwiftUI
+* The Future
+* Demo
+
+There will be minimal code in this talk
+
+So why have this talk?
+
+What It Is
+
+Swift is a powerful and intuitive
+programming language for iOS,
+iPadOS, macOS, tvOS, and watchOS
+
+Swift is a general-purpose, multi-paradigm language
+
+* Object-Oriented
+* Protocol-Oriented
+* Declarative (w/ Swift UI)
+
+Gone are the days of saying
+something is just OO
+
+Swift is open-source
+
+Built as a replacement for
+Objective-C
+
+Notable Architecture Decisions:
+
+* No semicolons
+* Type inference
+* Strings are UTF-8
+* Memory managed by Reference Counting
+
+* Functions are First Class Citizens
+* Optional types
+* Interop w/ Objective C
+
+My personal favorite: guard
+
+@images/swift-guard.png
+
+Supports Apple Cocoa and
+Cocoa Touch Frameworks
+
+Cocoa and Cocoa Touch are
+the run-time application environments
+for OSX and iOS
+
+@images/swift-cocoa.png
+
+History
+
+First release in June 2, 2014
+by Apple
+
+Announced at 2014 Apple WWDC
+
+Swift v2 announced at 2015 Apple WWDC
+
+Became Open-Source in
+December 3, 2015
+
+Officially became more popular
+than Objective-C in Q1 2018
+
+Programming Concepts
+
+* Compiled vs. Interpreted
+* Static vs. Dynamic Type Checking
+* Type Safety
+* Concurrency
+* Garbage Collection
+* Functional Programming
+* Imperative vs. Declarative
+
+Compiled vs. Interpreted
+
+Compiled
+
+Swift is compiled
+
+Pros
+
+* Speed / Peformance
+
+Cons
+
+* Must compile everytime
+* Challenging to implement reflection, metaprogramming, etc.
+
+Interpreted
+
+* No compilation step
+* Easier access to reflection, metaprogramming, etc.
+
+Cons
+
+* Less speed
+* Runtime errors
+
+Bonus: Bytecode
+
+* Power of compiled performance
+* Same interpreter as many other bytecode languages
+
+JVM
+
+Convert your language into JVM bytecode,
+run it on the JVM
+
+Static vs. Dynamic
+Type Checking
+
+Swift is a statically
+typed-checked language
+
+Static type checking
+
+Dynamic type checking
+
+Type Safety
+
+Strong vs. Weak Typing
+
+Swift is a strongly typed language
+
+Strong / Weak Typing means
+"how" type safety is enforced
+
+x = 1
+y = "2"
+x + y = ?
+
+It has nothing to do with syntax
+
+Examples of strongly typed language:
+
+* Java
+* Python
+* Javascript
+
+Examples of weakly typed language
+
+* PHP
+* C
+
+static vs dynamic type checking
+means "when" type safety is enforced
+
+Concurrency
+
+Swift supports concurrency
+
+Concurrency != Parallelism
+
+Swift 5.5 (2021) expands concurrency support
+via the "actor" model
+
+Garbage Collection
+
+2 main algorithms
+
+1. Reference Counting
+
+2. Mark - Sweep
+
+Stop-the-world, concurrent, generational
+
+Swift uses Automatic Reference Counting
+
+Problem of circular dependencies
+
+A -> B
+B -> A
+
+Swift mitigates this with "weak"
+and "unowned" keywords
+
+Functional Programming Concepts
+
+Swift is not considered a FP language
+
+But it applies many of the concepts
+
+Functions as first class citizens
+
+Map / Filter functions
+
+What FP concepts does it not include?
+
+* Pure functions
+* Referential transparency
+* Immutable variables
+
+Imperative vs. Declarative
+
+Imperative
+
+Where you tell your code what to do
+
+Swift Storyboard is imperative
+
+Declarative
+
+Where you describe what you want
+
+E.g. SQL
+
+Swift UI is declarative
+
+Storyboard / SwiftUI
+
+Storyboard & XIB
+
+.xib and .storyboard files
+are user interface files
+
+.xib = one view controller / menu bar
+.storyboard = many
+
+@images/swift-storyboard.png
+
+Very much a drag-and-drop
+GUI-driven style of working
+
+Storyboard is an imperative
+style of development
+
+Problems
+
+Interface Builder was released in
+1988
+
+Most recent stable releases (3.2.6 & 4)
+were released in March 2011, after which
+it became a part of Xcode 4
+
+Behind the scenes, Storyboards / XIB
+generate a lot of XML
+
+You really need the Interface Builder
+to do anything
+
+That, and your UI and your code are
+often separated
+
+Swift UI
+
+During WWDC 2019, Apple announced
+SwiftUI with Xcode 11
+
+Swift UI is declarative
+
+@images/swift-swiftui-code.png
+
+More power to the developer,
+with less extra fluff to worry about
+
+Problems
+
+* Community
+* No Objective-C support (only in SwiftUI files)
+
+Goals:
+
+* Simplify your dev process
+* Unify the experience
+* Expand your platform support
+
+@images/swift-swiftui-design.png
+
+The Future
+
+Cross platform
+
+Will Swift ever be Android's
+main language too?
+
+It's hard to say
+
+In 2017, there were rumors that
+Google would full-blown support Swift
+
+Also in 2017, Google announced
+Android support for Kotlin
+
+In 2019, Google stated Kotlin was the
+preferred language for Android
+
+So, it's not looking like Swift
+will be the official Android
+language any time soon
+
+But, Swift seems to be headed in another direction
+
+Supports Apple Platforms
+
+Also supports Linux (2018) and Windows (2020)
+for non-GUI server development
+
+https://swift.org/getting-started
+
+In October 2018, Apple announced work on
+Language Server Protocol support for Swift.
+
+A month later, a second post
+introduced SourceKit-LSP.
+
+So what's LSP?
+
+The Language Server Protocol (LSP) is a
+protocol created by Microsoft.
+
+It allows for standardized communication between
+a language and an editor or tool so that
+editors can support all languages with LSP at once
+
+@images/lsp.png
+
+Getting back to "The Future"
+
+Currently, cross-platform
+support isn't all the way there
+
+* LSP support
+* Community
+* Ease of use/installation
+
+I think this will all change
+
+Demo
+
+thanks
+* Aaron Krauss
+* thecodeboss.dev
+
+clevyr
+clevyr.com
+
+questions?
