@@ -99,33 +99,47 @@ Programming Concepts
 
 Compiled vs. Interpreted
 
-Compiled
-
 Swift is compiled
+
+Now when we say
+compiled / interpreted
+
+We're referring to an implementation
+of the language
+
+Not the language itself
+
+Compiled
 
 Pros
 
-* Speed / Peformance
+* Speed / Performance
+* Typically build with static type-checking
 
 Cons
 
+* Usually not cross-platform
 * Must compile everytime
-* Challenging to implement reflection, metaprogramming, etc.
+* Don't usually have benefits of
+dynamic type-checking
 
 Interpreted
 
+* Usually cross platform
 * No compilation step
-* Easier access to reflection, metaprogramming, etc.
+* Typically built with dynamic type-checking
 
 Cons
 
-* Less speed
-* Runtime errors
+* Less speed / performance
+* Don't usually have benefits of
+static type-checking
 
 Bonus: Bytecode
 
-* Power of compiled performance
-* Same interpreter as many other bytecode languages
+* Some of compiled performance
+* Usually cross-platform
+* Can use same VM as other bytecode languages
 
 JVM
 
@@ -138,9 +152,29 @@ Type Checking
 Swift is a statically
 typed-checked language
 
+Unlike compiled/interpreted,
+type checking is a language feature
+
 Static type checking
 
+* Track type errors early
+at compile time
+
+* Makes runtime modifications more challenging
+
+* Static type checking is more rigid
+on your development style
+
 Dynamic type checking
+
+* Easier to implement
+reflection, metaprogramming, etc.
+
+* Also easier to introduce type-related
+bugs into your code
+
+Dynamically type-checked languages
+often encourage testing with your code
 
 Type Safety
 
@@ -171,6 +205,9 @@ Examples of weakly typed language
 static vs dynamic type checking
 means "when" type safety is enforced
 
+Strong / Weak Typing means
+"how" type safety is enforced
+
 Concurrency
 
 Swift supports concurrency
@@ -179,6 +216,9 @@ Concurrency != Parallelism
 
 Swift 5.5 (2021) expands concurrency support
 via the "actor" model
+
+Swift does not appear to support
+true parallelism
 
 Garbage Collection
 
@@ -231,6 +271,10 @@ Where you describe what you want
 E.g. SQL
 
 Swift UI is declarative
+
+Learn more programming concepts at
+
+https://thecodeboss.dev/blog/
 
 Storyboard / SwiftUI
 
