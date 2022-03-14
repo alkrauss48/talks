@@ -1,0 +1,12 @@
+{
+  "name": "okcwebdevs-js-refactoring-and-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "test.js"
+  },
+  "author": "OKC WebDevs",
+  "license": "ISC"
+}
