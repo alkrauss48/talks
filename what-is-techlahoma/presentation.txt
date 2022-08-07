@@ -109,12 +109,21 @@ The Future
 Getting our name
 out there to more companies
 
-Corporate Sponsorships
+Increasing membership
+
+Corporate sponsorships
+
+@images/shecodesokc.png
+
+Into the way future
 
 Techlahoma Certified
 Developer Program
 
 How to Get Involved
+
+Signup for the events
+on Meetup
 
 Join the Techlahoma Slack
 
@@ -126,11 +135,9 @@ local events
 
 Find me, @thecodeboss
 
-Signup for the events
-on Meetup
-
 tl;dr
 
+Go to these links:
 * meetup.com/pro/techlahoma
 * slack.techlahoma.org
 
@@ -145,4 +152,5 @@ Elijah Palmer
 Thanks!
 
 Aaron Krauss
+thecodeboss.dev
 @thecodeboss
