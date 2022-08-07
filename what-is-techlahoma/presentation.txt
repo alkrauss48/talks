@@ -1,0 +1,148 @@
+Techlahoma
+
+@images/techlahoma.png
+
+Who am I?
+
+Aaron Krauss
+
+Professional developer
+in Oklahoma City
+since 2011
+
+Technical Lead of
+New Development
+
+@images/clevyr.png
+
+@images/techlahoma.png
+
+Involved since before
+Techlahoma existed
+
+Active speaker
+since 2014
+
+User group leader
+of 2 groups
+
+@images/okc-webdevs.png
+
+* OKC Ruby (2018 - 2020)
+* OKC WebDevs (2020 - )
+
+Former Techlahoma
+Board Member
+(2018 - 2019)
+
+So what are we
+going to talk about?
+
+@images/techlahoma.png
+
+* History
+* User Groups
+* Conferences
+* The Future
+* How to Get Involved
+
+History
+
+User groups existed
+before Techlahoma
+
+* OKC.js
+* OKC Ruby
+* Tulsa WebDevs
+* Tulsa Code for America
+* Java User Group (OKC JUG)
+* Linux User Group (OKC LUGnuts)
+
+In 2014, some key volunteers
+created Techlahoma as an
+official non-profit
+
+In 2016, Techlahoma was
+headquartered in OKC
+at StarSpace46
+
+In 2020, Techlahoma HQ
+changed to Tulsa, at
+36 Degrees North
+
+User Groups
+
+Lots of them
+
+* SheCodesOKC
+* OKC Coffee and Code
+* OKC WebDevs
+* OKC-Sharp
+* Tulsa Tech Night
+* Techlahoma Hack Night
+* OKC Functional Programming
+
+How do you sign up?
+
+meetup.com
+
+@images/meetup.png
+
+meetup.com/pro/techlahoma
+
+Google "techlahoma meetup"
+
+Conferences
+
+* Thunderplains (OKC) 
+* 200OK (Tulsa)
+* UX OK (Tulsa)
+
+Thunderplains is on
+Friday, October 28, 2022
+@ the OKC Convention Center
+
+thunderplainsconf.com
+
+The Future
+
+Getting our name
+out there to more companies
+
+Corporate Sponsorships
+
+Techlahoma Certified
+Developer Program
+
+How to Get Involved
+
+Join the Techlahoma Slack
+
+slack.techlahoma.org
+
+Join #okc-metro, #events,
+and more to keep up with
+local events
+
+Find me, @thecodeboss
+
+Signup for the events
+on Meetup
+
+tl;dr
+
+* meetup.com/pro/techlahoma
+* slack.techlahoma.org
+
+You have Techlahoma
+developers that work
+here too!
+
+Amber Hayes,
+Bryan Rigsby,
+Elijah Palmer
+
+Thanks!
+
+Aaron Krauss
+@thecodeboss
