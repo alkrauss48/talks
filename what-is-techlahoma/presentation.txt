@@ -40,11 +40,46 @@ going to talk about?
 
 @images/techlahoma.png
 
+* What We Are
 * History
 * User Groups
 * Conferences
 * The Future
 * How to Get Involved
+
+What We Are
+
+Our Mission
+
+Enrich Oklahoma’s technologists of all
+backgrounds through education,
+connection, and opportunity
+
+Techlahoma is a
+community of:
+
+* Developers
+* Designers
+* Business Analysts
+* Data Scientists
+* Digital Marketing
+* Managers
+* Sales Engineers
+* CEOs
+* Hobbyists
+* Newcomers
+* Humans
+* Probably some pets
+
+As long as you care
+about our mission
+
+Enrich Oklahoma’s technologists of all
+backgrounds through education,
+connection, and opportunity
+
+then you have found
+your group
 
 History
 
@@ -94,7 +129,7 @@ Google "techlahoma meetup"
 
 Conferences
 
-* Thunderplains (OKC) 
+* Thunderplains (OKC)
 * 200OK (Tulsa)
 * UX OK (Tulsa)
 
