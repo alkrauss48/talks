@@ -6,6 +6,11 @@ Who am I?
 
 Aaron Krauss
 
+I like:
+* tea
+* cocktails
+* longboarding
+
 Professional developer
 in Oklahoma City
 since 2011
@@ -29,7 +34,7 @@ of 2 groups
 @images/okc-webdevs.png
 
 * OKC Ruby (2018 - 2020)
-* OKC WebDevs (2020 - )
+* OKC WebDevs (since 2020)
 
 Former Techlahoma
 Board Member
@@ -49,11 +54,24 @@ going to talk about?
 
 What We Are
 
+Over 5000 members
+
 Our Mission
 
 Enrich Oklahoma’s technologists of all
 backgrounds through education,
 connection, and opportunity
+
+Non-profit
+
+Run entirely by volunteers
+
+Except for our
+Executive Director
+* Emily Harden
+
+Who is a part of
+Techlahoma?
 
 Techlahoma is a
 community of:
@@ -87,11 +105,7 @@ User groups existed
 before Techlahoma
 
 * OKC.js
-* OKC Ruby
-* Tulsa WebDevs
-* Tulsa Code for America
-* Java User Group (OKC JUG)
-* Linux User Group (OKC LUGnuts)
+* TulsaWebDevs
 
 In 2014, some key volunteers
 created Techlahoma as an
@@ -148,9 +162,7 @@ Increasing membership
 
 Corporate sponsorships
 
-@images/shecodesokc.png
-
-Into the way future
+Into the way future...
 
 Techlahoma Certified
 Developer Program
