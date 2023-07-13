@@ -5,6 +5,15 @@ Aaron Krauss
 @thecodeboss
 thecodeboss.dev
 
+I've spoken quite
+a bit
+
+Do I get nervous?
+
+Absolutely - every time
+
+But I have fun
+
 @images/clevyr.png
 
 Technical Lead of
@@ -12,16 +21,21 @@ New Development
 
 @images/okc-webdevs.png
 
-Agenda
+Why Give Talks?
+
+1. To learn and teach
+
+2. Market yourself
+
+How to give your
+first talk
 
 * Have an idea
 * Take the plunge
-* What to expect
 * How to prepare
 * The talk
 * Answering questions
 * After the talk
-* My Story
 
 * Have an Idea
 
@@ -44,9 +58,7 @@ Everyone always is
 
 So, now what?
 
-* Here's What to Expect
-
-Or, not expect...
+* How to Prepare
 
 No one is expecting you to be an expert
 
@@ -59,8 +71,6 @@ no matter how small
 
 You're just talking
 to your friends
-
-* How to Prepare
 
 Build a short outline
 
@@ -86,15 +96,9 @@ you don't want to practice anymore
 You can practice in your
 head, without speaking
 
-Do NOT try to memorize a whole
-presentation word-for-word
-
-Memorize your talking flow
-
-Everyone wants you to succeed
-
-No one is critiquing your every word,
-or trying to ask you impossible questions
+Focus on your talking flow,
+don't memorize your entire
+talk word-for-word
 
 * The Talk
 
@@ -105,9 +109,9 @@ you get in the zone
 
 Be interactive
 
-Don't sweat it; you know the material
-
 Things will happen; just roll with it
+
+Everyone wants you to succeed
 
 Pro tip: keep an eye on the clock
 
@@ -116,14 +120,8 @@ early than to end late
 
 * Answering Questions
 
-For every question,
-I like to start
-by thinking "I don't know"
-
-If you do know it - great!
-
-Admitting that you don't
-know an answer is always okay
+"I don't know" is
+a valid answer
 
 People respect honesty
 
@@ -133,8 +131,6 @@ They don't like BS
 
 You'll feel all the nervousness gone
 
-You'll feel so good
-
 It feels like you
 just won Wimbledon
 
@@ -142,46 +138,18 @@ And then the best part...
 
 You'll want to sign up for the next talk
 
-People get to know you
-
-They'll follow you
-on social media
-
-Post/tweet/threads? about you
-
-Know you on the
-Techlahoma slack
-
-* My Story
-
-2014 - First talk at OKCRB
-
-Talks are fun for me b/c
-I know I'm talking to my friends
-
-Do I get nervous?
-
-Absolutely - every time
-
-But I have fun
-
 * Summary
 
-Your topic is good enough
-Take the plunge
-Short outline + practice
-Everyone wants you to succeed
-Shorter > Longer
-
-Thanks!
-
-Aaron Krauss
-@thecodeboss
-thecodeboss.dev
+* Your topic is good enough
+* Sign up before you feel ready
+* Practice until you don't want to
+* Everyone wants you to succeed
+* Shorter is better
 
 * OKC WebDevs
 
 Looking for 4 speakers
+in August
 
 Lightning Talks
 5-10 minute talks
