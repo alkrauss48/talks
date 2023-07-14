@@ -1,18 +1,14 @@
-How to Give Your
-First talk
+Why Give Talks?
+
+We're gonna talk about
+2 things:
+
+1. Pump you up to give a talk
+2. Debunk your fears about it
 
 Aaron Krauss
 @thecodeboss
 thecodeboss.dev
-
-I've spoken quite
-a bit
-
-Do I get nervous?
-
-Absolutely - every time
-
-But I have fun
 
 @images/clevyr.png
 
@@ -23,29 +19,71 @@ New Development
 
 Why Give Talks?
 
+2 reasons
+
 1. To learn and teach
 
 2. Market yourself
 
-How to give your
-first talk
+That also includes
+your demographic
 
-* Have an idea
-* Take the plunge
-* How to prepare
-* The talk
-* Answering questions
-* After the talk
+Look at me
+I'm your stereotype
 
-* Have an Idea
+My demographic has
+been in charge far
+too long
 
-It can be anything
+You don't need me
+
+We've made things:
+
+* narrow-minded
+* ego-driven
+* we talk about ping pong
+and craft beer far too much
+
+Meanwhile, from other
+demographics at Clevyr:
+
+* listen first, then speak
+* ask the right questions
+* more emphasis on the user
+
+You shouldn't just "have"
+a voice at the table
+
+You should "be" the
+voice at the table
+
+Let's break
+down the barriers
+
+5 Common fears
+
+Fear #1:
+My topic isn't good enough
 
 Your topic is good enough
 
 It's all about learning
 
-* Take the Plunge
+"Every man I meet is my superior
+in some way, and in that I learn
+from him." - Emerson
+
+If I learn one thing from
+you, it's a win
+
+Fear #2:
+I'll never feel ready
+
+This one's probably true
+
+There's a difference
+between "feeling" ready,
+and "being" ready
 
 Sign up for a talk
 
@@ -56,69 +94,39 @@ After you sign up, you'll be nervous
 
 Everyone always is
 
-So, now what?
-
-* How to Prepare
-
-No one is expecting you to be an expert
-
-"Every man I meet is my superior
-in some way, and in that I learn
-from him." - Emerson
-
-We just want to learn something,
-no matter how small
-
-You're just talking
-to your friends
-
-Build a short outline
-
-Figure out how you want to present
-
-Powerpoint, Google Slides,
-walk through your code, etc.
-
-Don't overwhelm yourself
-the first time
-
-Don't compare yourself to others
-
-Compare yourself to you, and only you
-
-Practice
-
-Practice a few times - but don't go crazy
-
 Practice to the point where
 you don't want to practice anymore
 
-You can practice in your
-head, without speaking
+Fear #3:
+I'll freeze up
 
-Focus on your talking flow,
-don't memorize your entire
-talk word-for-word
+Accept that things will happen
 
-* The Talk
+Just roll with it
 
 The first minute is rough
 
 After the first minute,
 you get in the zone
 
-Be interactive
-
-Things will happen; just roll with it
-
 Everyone wants you to succeed
 
-Pro tip: keep an eye on the clock
+No one is expecting you to be an expert
 
-It's always better to end
-early than to end late
+Fear #4:
+I can't speak
+for 30-40 minutes
 
-* Answering Questions
+That's okay
+
+Shorter is better
+
+Everybody prefers to
+get done early
+
+Fear #5:
+I won't be able to
+answer questions
 
 "I don't know" is
 a valid answer
@@ -127,24 +135,13 @@ People respect honesty
 
 They don't like BS
 
-* After the Talk
-
-You'll feel all the nervousness gone
-
-It feels like you
-just won Wimbledon
-
-And then the best part...
-
-You'll want to sign up for the next talk
-
 * Summary
 
 * Your topic is good enough
 * Sign up before you feel ready
-* Practice until you don't want to
 * Everyone wants you to succeed
 * Shorter is better
+* "I don't know" is okay
 
 * OKC WebDevs
 
