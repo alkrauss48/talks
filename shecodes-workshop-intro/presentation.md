@@ -12,9 +12,6 @@ thecodeboss.dev
 
 ![Clevyr logo](https://github.com/alkrauss48/talks/blob/master/shecodes-workshop-intro/images/clevyr.png?raw=true)
 
-Technical Lead of
-New Development
-
 ![OKC WebDevs logo](https://github.com/alkrauss48/talks/blob/master/shecodes-workshop-intro/images/okc-webdevs.png?raw=true)
 
 Why Give Talks?
@@ -67,9 +64,9 @@ Your topic is good enough
 
 It's all about learning
 
-"Every man I meet is my superior
-in some way, and in that I learn
-from him." - Emerson
+> "Every man I meet is my superior
+> in some way, and in that I learn
+> from him." - Emerson
 
 If I learn one thing from
 you, it's a win
