@@ -4,9 +4,9 @@ By Aaron Krauss
 @thecodeboss
 thecodeboss.dev
 
-![Clevyr logo](https://github.com/alkrauss48/talks/blob/master/shecodes-workshop-intro/images/clevyr.png?raw=true)
+![Clevyr logo](https://github.com/alkrauss48/talks/blob/master/wordpress-to-hugo/images/clevyr.png?raw=true)
 
-![OKC WebDevs logo](https://github.com/alkrauss48/talks/blob/master/shecodes-workshop-intro/images/okc-webdevs.png?raw=true)
+![OKC WebDevs logo](https://github.com/alkrauss48/talks/blob/master/wordpress-to-hugo/images/okc-webdevs.png?raw=true)
 
 From Wordpress to Hugo
 
