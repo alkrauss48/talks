@@ -1,4 +1,4 @@
-# [Designing with Developers in Mind](https://simpleslides.dev/aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2Fsa3JhdXNzNDgvdGFsa3MvbWFzdGVyL2Fubm91bmNlbWVudHMvb2tjLXdlYmRldnMvMjAyMy0wOC0yMi5tZA==?index=0)
+# [Designing with Developers in Mind](https://simpleslides.dev/aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2Fsa3JhdXNzNDgvdGFsa3MvbWFzdGVyL2Rlc2lnbmluZy13aXRoLWRldmVsb3BlcnMtaW4tbWluZC9wcmVzZW50YXRpb24ubWQ=?index=0)
 
 In this talk, we'll focus on how designers can improve their processes before, during, and after the design phase to make the most of their experience with developers. You'll come out of this talk with actual tasks that you can implement today; not just big-picture concepts. And lastly, we'll talk about what is appropriate for you to ask of your development team while they are in the development phase, because this collaboration works both ways.
 
