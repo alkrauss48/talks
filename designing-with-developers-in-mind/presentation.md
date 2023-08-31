@@ -4,6 +4,13 @@ Aaron Krauss
 @thecodeboss
 thecodeboss.dev
 
+* tea
+* cocktails
+* longboarding
+* random hobby of the month
+
+![Cast iron](https://github.com/alkrauss48/talks/blob/master/designing-with-developers-in-mind/images/castiron.jpg?raw=true)
+
 ![OKC WebDevs](https://github.com/alkrauss48/talks/blob/master/announcements/images/okc-webdevs.png?raw=true)
 
 ![OKC Coffee and Code](https://github.com/alkrauss48/talks/blob/master/announcements/images/okc-coffee-and-code.jpeg?raw=true)
