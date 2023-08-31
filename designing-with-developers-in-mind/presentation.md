@@ -21,7 +21,7 @@ when working with a designer
 
 Even if you don't have to, *or even want to*...
 
-You <u>must</u> always
+You <u>must</u>
 deviate from the original design.
 
 \# 2
@@ -44,7 +44,7 @@ take too much time
 Never admit that you don't know something.
 
 Just say **it's impossible**, even if there
-are plenty of websites that already do it.
+are plenty of examples that already do it.
 
 # Developer Code of Ethics
 when working with a designer
@@ -53,9 +53,33 @@ Now that that's out of the way
 
 # Designing with Developers in Mind
 
+Why have this talk?
+
+I've worked closely with
+designers since 2014
+
+We like to blame each other
+
+To a degree, I get it
+
+Usually design and dev don't happen together
+
+Which means there's often no collaboration
+
+Design builds this vision
+
+Dev decides how to implement it
+
+![Success Kid](https://534d-2600-8803-bfba-3900-290d-e859-992d-8d11.ngrok-free.app/images/success-kid.jpg)
+We can do better
+
 Core message:
 
-Empowering you to collaborate with developers
+Empowering you to **collaborate** with developers
+
+Not just while you're designing
+
+But before and after too
 
 * Pre-design
 * Design
@@ -84,7 +108,7 @@ Diagram UX flows together
 This is **product design**
 
 which should incorporate
-both the **design** and the **build** teams
+both the **design** and the **dev** teams
 
 ## Summary
 Pre-design
@@ -97,13 +121,13 @@ Pre-design
 
 \# 1
 
-Review major design flows with dev lead
+Review major design decisions with dev lead
 
 \# 2
 
 Stateful design
 
-It's typical to only design the "happy path"
+Often we focus on designing the "success path"
 
 As developers, we have to know what to do
 when things are different "states"
@@ -127,33 +151,46 @@ You don't have to design everything
 
 But there are some things you should always design
 
-You can skip designing:
+You don't have to design:
 
 * 10 of the same page template
+
 * screens with minor differences
+
 * stateful design for *everything*
 
 But you *should* design:
 
 * all different components/widgets
-* one example of various states
-* responsive designs
 
-On the topic of responsive design...
+* one example of various states
+
+* responsive designs
 
 \# 4
 
-Try to keep responsive designs the same
+Follow patterns, and only deviate for good reasons
 
-Navigation can be an exception
+Example questions a dev might ask:
 
-But in general, keep the same UX
+Why are there 8 shades of gray throughout the app?
 
-We don't have separate codebases for
-different screen sizes
+Why are these 3 page headers the same, but this other one is different?
 
-It is okay to deviate, as long as you
+Why does this button open a modal, but the other takes you to a page?
+
+Why is this experience different on mobile than on desktop?
+
+As developers, we like to find patterns
+
+We don't like handling edge cases
+
+It is okay to deviate from your patterns, as long as you
 have a good reason
+
+Just make sure you have a good reason
+
+And communicate that reason
 
 ## Summary
 Design
@@ -161,7 +198,7 @@ Design
 1. Review major design flows with dev lead
 1. Diagram UX flows together
 1. Gloss over the right things
-1. Try to keep responsive designs the same
+1. Follow patterns
 
 ## Post-design
 2 points
@@ -193,7 +230,7 @@ If you change the design, communicate
 
 Check in with the dev team
 
-Things happen during dev
+Requirements often change during dev
 
 Know that you can play a role in determining direction
 
@@ -223,6 +260,13 @@ Dev Phase
 1. If you change the design, communicate
 1. Check in with the dev team
 1. Know that designs won't identically match the final product
+
+## Recap
+
+* Pre-design
+* Design
+* Post-design
+* Dev Phase
 
 Thanks!
 
