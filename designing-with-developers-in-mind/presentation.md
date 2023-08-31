@@ -70,7 +70,7 @@ Design builds this vision
 
 Dev decides how to implement it
 
-![Success Kid](https://534d-2600-8803-bfba-3900-290d-e859-992d-8d11.ngrok-free.app/images/success-kid.jpg)
+![Success Kid](https://github.com/alkrauss48/talks/blob/master/designing-with-developers-in-mind/images/success-kid.jpg?raw=true)
 We can do better
 
 Core message:
@@ -103,7 +103,7 @@ Usually this will be something like:
 
 Diagram UX flows together
 
-![Figjam workflow diagram](https://534d-2600-8803-bfba-3900-290d-e859-992d-8d11.ngrok-free.app/images/workflow-diagram.jpg)
+![Figjam workflow diagram](https://github.com/alkrauss48/talks/blob/master/designing-with-developers-in-mind/images/workflow-diagram.jpg?raw=true)
 
 This is **product design**
 
@@ -137,11 +137,11 @@ when things are different "states"
 * error
 * success
 
-![Initial state](https://534d-2600-8803-bfba-3900-290d-e859-992d-8d11.ngrok-free.app/images/initial-state.png)
+![Initial state](https://github.com/alkrauss48/talks/blob/master/designing-with-developers-in-mind/images/initial-state.png?raw=true)
 
-![Error with retry](https://534d-2600-8803-bfba-3900-290d-e859-992d-8d11.ngrok-free.app/images/error-retry.png)
+![Error with retry](https://github.com/alkrauss48/talks/blob/master/designing-with-developers-in-mind/images/error-retry.png?raw=true)
 
-![Error with modal](https://534d-2600-8803-bfba-3900-290d-e859-992d-8d11.ngrok-free.app/images/error-modal.png)
+![Error with modal](https://github.com/alkrauss48/talks/blob/master/designing-with-developers-in-mind/images/error-modal.png?raw=true)
 
 \# 3
 
@@ -211,7 +211,7 @@ Review designs together
 
 Express what is ultra important, and what isn't
 
-![Mobile app with pie chart](https://534d-2600-8803-bfba-3900-290d-e859-992d-8d11.ngrok-free.app/images/what-is-important.jpg)
+![Mobile app with pie chart](https://github.com/alkrauss48/talks/blob/master/designing-with-developers-in-mind/images/what-is-important.jpg?raw=true)
 
 ## Summary
 Post-design
@@ -240,7 +240,7 @@ Know that designs won't identically match the final product
 
 Plato's Theory of Forms
 
-![Triangle](https://534d-2600-8803-bfba-3900-290d-e859-992d-8d11.ngrok-free.app/images/triangle.jpg)
+![Triangle](https://github.com/alkrauss48/talks/blob/master/designing-with-developers-in-mind/images/triangle.jpg?raw=true)
 
 Business > Design or Dev
 
