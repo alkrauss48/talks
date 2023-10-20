@@ -1,4 +1,4 @@
-My Advice to New Developers
+# My Advice to New Developers
 
 ## Aaron Krauss
 thecodeboss.dev
