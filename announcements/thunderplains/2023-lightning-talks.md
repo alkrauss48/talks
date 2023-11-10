@@ -28,3 +28,17 @@ Next **OKC WebDevs** Meetup:
 * Free lunch
 
 👏
+
+![Tulsa WebDevs](https://github.com/tulsawebdevs/twd-branding/blob/8cc55652e94e1793fc115a47fadb4ad65330dd2a/twd%20full%20logo/tulsawebdevs%20logo%20full.png)
+
+* slack.techlahoma.org
+   * <small>#ug-tulsawebdevs</small>
+* meetup.com/tulsa-web-devs
+
+Next **Tulsa WebDevs** Meetup:
+* Hack Night the Hacksgiving Edition 🦃 💻 🥷
+* Tuesday, Nov 28
+* 6-830pm @ 36N Basecamp
+* Food & Stickers
+
+🎉
